@@ -11,15 +11,21 @@ def get_puzzle():
         puzzle = puzzle + line.split(" ") # TODO: there is a '_' in the array and so not every element is an integer
     inFile.close()
     return puzzle
-
+# Aksing what type of algorithm to use
 def ask_algo():
-    algo = input(
-        "Which one of these algorithms would you like to try?\n'BFS', 'IDS', 'h1', 'h2', 'h3'"
-    )
-    if algo not in ["BFS", "IDS", "h1", "h2", "h3"]:
-        print("Invalid response! Write")
-    else:
-        return True
+    while True:  # Keep asking until a valid response is given
+        algo = input(
+            "Which one of these algorithms would you like to try?\n'BFS', 'IDS', 'h1', 'h2', 'h3': "
+        )
+        if algo in ["BFS", "IDS", "h1", "h2", "h3"]:
+            return algo  # Return the valid algorithm choice
+        else:
+            print("Invalid response! Please choose among 'BFS', 'IDS', 'h1', 'h2', 'h3'.")
+
+# Testing
+selected_algo = ask_algo()
+print(f"You have selected: {selected_algo}")
+
 
 def count_split_inversion(b1, b2):
     i, j, k, c3 = 0
@@ -55,4 +61,5 @@ def check_solvable(puzzle):
 
 # Testing    
 puzzle  = get_puzzle()
-print(check_solvable(puzzle))
+if None != puzzle:
+    print(check_solvable(puzzle))
