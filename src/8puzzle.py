@@ -263,7 +263,7 @@ class EightPuzzle(Problem):
     def __init__(self, initial, goal=(1, 2, 3, 4, 5, 6, 7, 8, 0)):
         super().__init__(initial, goal)  # Call the superclass __init__ if necessary
         self.node_counter = 0
-        assert self.check_solvable(initial) % 2 == self.check_solvable(goal) % 2, "Initial and goal states must have the same parity."
+        assert self.check_solvable(initial) % 2 == self.check_solvable(goal) % 2, "The inputted puzzle is not solvable."
         self.initial = initial
         self.goal = goal
 
@@ -481,50 +481,47 @@ def run_search_algorithm(search_func, problem, result_queue):
 
 
 algorithm_map = {
-    'BFS': breadth_first_search,
-    'IDS': iterative_deepening_search,
-    'h1': heuristic_h1,
-    'h2': heuristic_h2,
-    'h3': heuristic_h3,
+    'BFS': (breadth_first_search, "Breadth First Search"),
+    'IDS': (iterative_deepening_search, "Iterative Deepening Search"),
+    'h1': (heuristic_h1, "Heuristic H1"),
+    'h2': (heuristic_h2, "Heuristic H2"),
+    'h3': (heuristic_h3, "Heuristic H3"),
 }
+
 
 
 def main():
     args = parse_arguments()
     # Ensure the 'results' directory exists
-    results_dir = 'results'
+    results_dir = 'Test_results'
     if not os.path.exists(results_dir):
         os.makedirs(results_dir)  # Creates the directory if it does not exist
 
     # Modify the output_file_path to place the results in the 'results' directory
-    file_name = os.path.basename(args.fPath)  # Extract the filename from the path
-    output_file_name = file_name.replace('.txt', '_results.txt')  # Modify the file name as needed
+    # file_name = os.path.basename(args.fPath)  # Extract the filename from the path
+    output_file_name = 'part2_results.txt'
     output_file_path = os.path.join(results_dir, output_file_name)  # Construct the full path
         
     # Load the puzzle from the specified file path
     puzzle = get_puzzle(args.fPath)
     if puzzle is None:
-        with open(output_file_path, 'w') as file:
+        with open(output_file_path, 'a') as file:
             file.write("Could not load the puzzle.\n")
         print("Could not load the puzzle.")
         return
-
-    puzzle_instance = EightPuzzle(puzzle)
-    
-    # Check if the puzzle is solvable
-    if puzzle_instance.check_solvable(puzzle) % 2 != 0:
-        with open(output_file_path, 'w') as file:
-            file.write("The inputted puzzle is not solvable.\n")
-            file.write(board8(puzzle) + "\n")
-        print("The inputted puzzle is not solvable:")
-        board8(puzzle)
+    try:
+        puzzle_instance = EightPuzzle(puzzle)
+    except AssertionError as error:
+        with open(output_file_path, 'a') as file:
+            file.write(f"\nUnsolvable puzzle in file {args.fPath}: {error}")
+        print(f"\nUnsolvable puzzle at {args.fPath}.")
         return
-
-    search_func = algorithm_map.get(args.alg)
+    
+    search_func, algorithm_name = algorithm_map.get(args.alg, (None, "Unknown Algorithm"))
     if search_func is None:
-        with open(output_file_path, 'w') as file:
-            file.write("Invalid algorithm specified.\n")
-        print("Invalid algorithm specified.")
+        with open(output_file_path, 'a') as file:
+            file.write(f"\nInvalid algorithm specified at {args.fPath}.\n")
+        print("\nInvalid algorithm specified.")
         return
 
     result_queue = Queue()
@@ -539,7 +536,7 @@ def main():
     seconds = int(total_time)
     microseconds = int((total_time - seconds) * 1_000_000)
     # Write results to file
-    with open(output_file_path, 'w') as file:
+    with open(output_file_path, 'a') as file:
         if search_process.is_alive():
             # If process is still alive after the timeout
             search_process.terminate()
@@ -548,6 +545,8 @@ def main():
             file.write("Total nodes generated: Data unavailable — process was terminated\n")
             file.write("Path length: Timed out.\n")
             file.write("Path: Timed out.\n")
+            file.write(f"Algorithm was: {algorithm_name}\n")
+            file.write(f"Puzzle was at {args.fPath}\n")
         else:
             # Process completed within the time limit
             try:
@@ -557,13 +556,15 @@ def main():
                 elif result == failure or result == cutoff:
                     file.write("No solution found or search was cut off.\n")
                 else:
-                    file.write(f"Total nodes generated: {result['nodes_generated']}\n")
+                    file.write(f"\nTotal nodes generated: {result['nodes_generated']}\n")
                     file.write(f"Total time taken: {seconds} sec {microseconds} microSec.\n")
                     file.write(f"Path length: {len(result['path'])}\n")
                     file.write(f"Path: {''.join(result['path'])}\n")
+                    file.write(f"Algorithm was: {algorithm_name}\n")
+                    file.write(f"Puzzle was at {args.fPath}")
             except queue.Empty:
                 file.write("No result was returned by the search algorithm.\n")
-
+                file.write(f"Puzzle was at {args.fPath}")
     print(f"Results written to {output_file_path}")
 
 if __name__ == '__main__':
