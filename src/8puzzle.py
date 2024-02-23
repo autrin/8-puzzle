@@ -8,7 +8,6 @@ import sys
 import os
 from collections import defaultdict, deque, Counter
 from multiprocessing import Process, Queue
-
 from numpy import mean
 
 
@@ -60,7 +59,21 @@ def path_actions(node):
     if node.parent is None:
         return []
     else:
-        return path_actions(node.parent) + [node.action]
+        # Directly check the value of node.action without wrapping it in a list
+        if node.action == 'U':
+            action = 'D'  # If the blank moves up, the tile moves down
+        elif node.action == 'D':
+            action = 'U'  # If the blank moves down, the tile moves up
+        elif node.action == 'L':
+            action = 'R'  # If the blank moves left, the tile moves right
+        elif node.action == 'R':
+            action = 'L'  # If the blank moves right, the tile moves left
+        else:
+            action = node.action  # This else clause might be unnecessary, just for safety
+        
+        # Recursively accumulate actions, add the current action as part of the list
+        return path_actions(node.parent) + [action]
+
 
 def path_states(node):
     "The sequence of states to get to this node."
@@ -71,7 +84,6 @@ def path_states(node):
 FIFOQueue = deque
 
 LIFOQueue = list
-
 
 class PriorityQueue:
     """A queue in which the item with minimum f(item) is always popped first."""
@@ -260,34 +272,34 @@ class EightPuzzle(Problem):
         return state.index(0)
 
     def actions(self, state):
-        """Return the tiles that can move into the blank space."""
-        blank_index = self.find_blank_space(state)
-        possible_moves = []
-        row, col = divmod(blank_index, 3)  # Get row, col of blank space
-        
-        if row > 0: possible_moves.append(state[blank_index - 3])  # Tile can move down
-        if row < 2: possible_moves.append(state[blank_index + 3])  # Tile can move up
-        if col > 0: possible_moves.append(state[blank_index - 1])  # Tile can move right
-        if col < 2: possible_moves.append(state[blank_index + 1])  # Tile can move left
-        
-        return [tile for tile in possible_moves if tile != 0]  # Exclude '0' from possible moves
+        """Return the actions that can be executed in the given state."""
+        possible_actions = []
+        blank_index = state.index(0)
+        row, col = divmod(blank_index, 3)
 
-    """
-    "U" in this action sequence means the tile below the blank space moved up.
-    "D" means the tile above the blank space moved down.
-    "L" means the tile to the right of the blank space moved left.
-    "R" means the tile to the left of the blank space moved right.
-    """
+        if row > 0: possible_actions.append('U')  # Blank can move up
+        if row < 2: possible_actions.append('D')  # Blank can move down
+        if col > 0: possible_actions.append('L')  # Blank can move left
+        if col < 2: possible_actions.append('R')  # Blank can move right
+
+        return possible_actions
 
     def result(self, state, action):
-        """Return the state that results from moving a tile into the blank space."""
-        blank_index = self.find_blank_space(state)
-        tile_index = state.index(action)  # Find the index of the tile to move
-        
-        # Swap the tile and the blank space
+        """Return the resulting state from taking action in state."""
+        blank_index = state.index(0)
         new_state = list(state)
-        new_state[blank_index], new_state[tile_index] = new_state[tile_index], new_state[blank_index]
-        
+        """
+        "U" in this action sequence means the tile below the blank space moved up.
+        "D" means the tile above the blank space moved down.
+        "L" means the tile to the right of the blank space moved left.
+        "R" means the tile to the left of the blank space moved right.
+        """
+        if action == 'U': swap_with = blank_index - 3
+        elif action == 'D': swap_with = blank_index + 3
+        elif action == 'L': swap_with = blank_index - 1
+        elif action == 'R': swap_with = blank_index + 1
+
+        new_state[blank_index], new_state[swap_with] = new_state[swap_with], new_state[blank_index]
         return tuple(new_state)
 
     def h1(self, node):
@@ -347,26 +359,13 @@ class EightPuzzle(Problem):
             distance += abs(xi - xg) + abs(yi - yg)
         return distance
 
-
-# def manhattan_distance(state, goal):
-#     distance = 0
-#     for i in range(1, 9):  # Exclude the empty tile
-#         xi, yi = divmod(state.index(i), 3)
-#         xg, yg = divmod(goal.index(i), 3)
-#         distance += abs(xi - xg) + abs(yi - yg)
-#     return distance
-
-
-
 def hamming_distance(A, B):
     "Number of positions where vectors A and B are different."
     return sum(a != b for a, b in zip(A, B))
 
-
 # def inversions(board):
 #     "The number of times a piece is a smaller number than a following piece."
 #     return sum((a > b and a != 0 and b != 0) for (a, b) in combinations(board, 2))
-
 
 
 def board8(board, fmt=(3 * "{} {} {}\n")):
@@ -402,13 +401,6 @@ class Board(defaultdict):
     def __hash__(self):
         return hash(tuple(sorted(self.items()))) + hash(self.to_move)
 
-# Some specific EightPuzzle problems
-
-# e1 = EightPuzzle((1, 4, 2, 0, 7, 5, 3, 6, 8))
-# e2 = EightPuzzle((1, 2, 3, 4, 5, 6, 7, 8, 0))
-# e3 = EightPuzzle((4, 0, 2, 5, 1, 3, 7, 8, 6))
-# e4 = EightPuzzle((7, 2, 4, 5, 0, 6, 8, 3, 1))
-# e5 = EightPuzzle((8, 6, 7, 2, 5, 4, 3, 0, 1))
 
 
 # Read input
@@ -437,116 +429,6 @@ def ask_algo():
                 "Invalid response! Please choose among 'BFS', 'IDS', 'h1', 'h2', 'h3'."
             )
 
-# Solve an 8 puzzle problem and print out each state
-
-# for s in path_states(astar_search(e1)):
-#     print(board8(s))
-
-class CountCalls:
-    """Delegate all attribute gets to the object, and count them in ._counts"""
-
-    def __init__(self, obj):
-        self._object = obj
-        self._counts = Counter()
-
-    def __getattr__(self, attr):
-        "Delegate to the original object, after incrementing a counter."
-        self._counts[attr] += 1
-        return getattr(self._object, attr)
-
-
-def report(searchers, problems, verbose=True):
-    """Show summary statistics for each searcher (and on each problem unless verbose is false)."""
-    for searcher in searchers:
-        print(searcher.__name__ + ":")
-        total_counts = Counter()
-        for p in problems:
-            prob = CountCalls(p)
-            soln = searcher(prob)
-            counts = prob._counts
-            counts.update(actions=len(soln), cost=soln.path_cost)
-            total_counts += counts
-            if verbose:
-                report_counts(counts, str(p)[:40])
-        report_counts(total_counts, "TOTAL\n")
-
-
-def report_counts(counts, name):
-    """Print one line of the counts report."""
-    print(
-        "{:9,d} nodes |{:9,d} goal |{:5.0f} cost |{:8,d} actions | {}".format(
-            counts["result"], counts["is_goal"], counts["cost"], counts["actions"], name
-        )
-    )
-
-# def astar_misplaced_tiles(problem):
-#     return astar_search(problem, h=problem.h1)
-
-
-# report(
-#     [breadth_first_search, astar_misplaced_tiles, astar_search], [e1, e2, e3, e4, e5]
-# )
-
-# report([astar_search, astar_tree_search], [e1, e2, e3, e4])
-
-# def build_table(table, depth, state, problem):
-#     if depth > 0 and state not in table:
-#         problem.initial = state
-#         table[state] = len(astar_search(problem))
-#         for a in problem.actions(state):
-#             build_table(table, depth - 1, problem.result(state, a), problem)
-#     return table
-
-
-# def invert_table(table):
-#     result = defaultdict(list)
-#     for key, val in table.items():
-#         result[val].append(key)
-#     return result
-
-
-# goal = (1, 2, 3, 4, 5, 6, 7, 8, 0)
-# table8 = invert_table(build_table({}, 25, goal, EightPuzzle(goal)))
-
-# def report8(
-#     table8,
-#     M,
-#     Ds=range(2, 25, 2),
-#     searchers=(breadth_first_search, astar_misplaced_tiles, astar_search),
-# ):
-#     "Make a table of average nodes generated and effective branching factor"
-#     for d in Ds:
-#         line = [d]
-#         N = min(M, len(table8[d]))
-#         states = random.sample(table8[d], N)
-#         for searcher in searchers:
-#             nodes = 0
-#             for s in states:
-#                 problem = CountCalls(EightPuzzle(s))
-#                 searcher(problem)
-#                 nodes += problem._counts["result"]
-#             nodes = int(round(nodes / N))
-#             line.append(nodes)
-#         line.extend([ebf(d, n) for n in line[1:]])
-#         print("{:2} & {:6} & {:5} & {:5} && {:.2f} & {:.2f} & {:.2f}".format(*line))
-
-
-# def ebf(d, N, possible_bs=[b / 100 for b in range(100, 300)]):
-#     "Effective Branching Factor"
-#     return min(possible_bs, key=lambda b: abs(N - sum(b**i for i in range(1, d + 1))))
-
-
-# def edepth_reduction(d, N, b=2.67):
-
-
-# def random_state():
-#     x = list(range(9))
-#     random.shuffle(x)
-#     return tuple(x)
-
-
-# meanbf = mean(len(e3.actions(random_state())) for _ in range(10000))
-# meanbf
 
 def heuristic_h1(problem):
     return astar_search(problem, h=problem.h1)
@@ -609,10 +491,21 @@ algorithm_map = {
 
 def main():
     args = parse_arguments()
+    # Ensure the 'results' directory exists
+    results_dir = 'results'
+    if not os.path.exists(results_dir):
+        os.makedirs(results_dir)  # Creates the directory if it does not exist
 
+    # Modify the output_file_path to place the results in the 'results' directory
+    file_name = os.path.basename(args.fPath)  # Extract the filename from the path
+    output_file_name = file_name.replace('.txt', '_results.txt')  # Modify the file name as needed
+    output_file_path = os.path.join(results_dir, output_file_name)  # Construct the full path
+        
     # Load the puzzle from the specified file path
     puzzle = get_puzzle(args.fPath)
     if puzzle is None:
+        with open(output_file_path, 'w') as file:
+            file.write("Could not load the puzzle.\n")
         print("Could not load the puzzle.")
         return
 
@@ -620,12 +513,17 @@ def main():
     
     # Check if the puzzle is solvable
     if puzzle_instance.check_solvable(puzzle) % 2 != 0:
+        with open(output_file_path, 'w') as file:
+            file.write("The inputted puzzle is not solvable.\n")
+            file.write(board8(puzzle) + "\n")
         print("The inputted puzzle is not solvable:")
         board8(puzzle)
         return
 
     search_func = algorithm_map.get(args.alg)
     if search_func is None:
+        with open(output_file_path, 'w') as file:
+            file.write("Invalid algorithm specified.\n")
         print("Invalid algorithm specified.")
         return
 
@@ -640,30 +538,33 @@ def main():
     total_time = time.time() - start_time
     seconds = int(total_time)
     microseconds = int((total_time - seconds) * 1_000_000)
+    # Write results to file
+    with open(output_file_path, 'w') as file:
+        if search_process.is_alive():
+            # If process is still alive after the timeout
+            search_process.terminate()
+            search_process.join()
+            file.write(f"Algorithm timed out after 15 minutes. Total time taken: >15 min\n")
+            file.write("Total nodes generated: Data unavailable — process was terminated\n")
+            file.write("Path length: Timed out.\n")
+            file.write("Path: Timed out.\n")
+        else:
+            # Process completed within the time limit
+            try:
+                result = result_queue.get_nowait()
+                if isinstance(result, Exception):
+                    raise result
+                elif result == failure or result == cutoff:
+                    file.write("No solution found or search was cut off.\n")
+                else:
+                    file.write(f"Total nodes generated: {result['nodes_generated']}\n")
+                    file.write(f"Total time taken: {seconds} sec {microseconds} microSec.\n")
+                    file.write(f"Path length: {len(result['path'])}\n")
+                    file.write(f"Path: {''.join(result['path'])}\n")
+            except queue.Empty:
+                file.write("No result was returned by the search algorithm.\n")
 
-    if search_process.is_alive():
-        # If process is still alive after the timeout
-        search_process.terminate()
-        search_process.join()
-        print(f"Algorithm timed out after 15 minutes. Total time taken: >15 min")
-        print("Total nodes generated: ", "Data unavailable — process was terminated")
-        print("Path length: Timed out.")
-        print("Path: Timed out.")
-    else:
-        # Process completed within the time limit
-        try:
-            result = result_queue.get_nowait()
-            if isinstance(result, Exception):
-                raise result
-            elif result == failure or result == cutoff:
-                print("No solution found or search was cut off.")
-            else:
-                print(f"Total nodes generated: {result['nodes_generated']}")
-                print(f"Total time taken: {seconds} sec {microseconds} microSec.")
-                print(f"Path length: {len(result['path'])}")
-                print(f"Path: {''.join(result['path'])}")
-        except queue.Empty:
-            print("No result was returned by the search algorithm.")
+    print(f"Results written to {output_file_path}")
 
 if __name__ == '__main__':
     main()
