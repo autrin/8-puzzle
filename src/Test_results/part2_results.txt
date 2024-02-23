@@ -86,4 +86,41 @@ Path length: 20
 Path: DDLLURULDRRDLLURRULL
 Algorithm was: Iterative Deepening Search
 Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S2.txt
+Unsolvable puzzle in file /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S3.txt: The inputted puzzle is not solvable.Algorithm timed out after 15 minutes. Total time taken: >15 min
+Total nodes generated: Data unavailable — process was terminated
+Path length: Timed out.
+Path: Timed out.
+Algorithm was: Iterative Deepening Search
+Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S4.txt
+
+Total nodes generated: 320
+Total time taken: 0 sec 190801 microSec.
+Path length: 6
+Path: RDLUUL
+Algorithm was: Iterative Deepening Search
+Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S5.txt
+Total nodes generated: 118290
+Total time taken: 0 sec 561292 microSec.
+Path length: 24
+Path: DDLUULDRRULLDRRDLLURRULL
+Algorithm was: Breadth First Search
+Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S1.txt
+Total nodes generated: 41329
+Total time taken: 0 sec 299954 microSec.
+Path length: 20
+Path: DDLLURULDRRDLLURRULL
+Algorithm was: Breadth First Search
+Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S2.txt
 Unsolvable puzzle in file /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S3.txt: The inputted puzzle is not solvable.
+Total nodes generated: 181438
+Total time taken: 0 sec 826496 microSec.
+Path length: 31
+Path: DDRUULLDDRURULLDDRURULLDDRRUULL
+Algorithm was: Breadth First Search
+Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S4.txt
+Total nodes generated: 102
+Total time taken: 0 sec 329983 microSec.
+Path length: 6
+Path: RDLUUL
+Algorithm was: Breadth First Search
+Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S5.txt
