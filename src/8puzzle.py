@@ -493,7 +493,7 @@ algorithm_map = {
     'h3': (heuristic_h3, "Heuristic H3"),
 }
 
-def main(search_func, algorithm_name):
+def main(search_func, algorithm_name, total_time3, total_nodes3, file_path):
     if args.part == '3' and args.alg == 'all':
         # Ensure the 'Experiment_results' directory exists
         results_dir = 'Experiment_results3'
@@ -585,36 +585,36 @@ def main(search_func, algorithm_name):
 
 if __name__ == '__main__':
     args = parse_arguments()
+    total_time3, total_nodes3, solved_count = 0,0,0
+
     if args.part == '2':
         if args.alg in algorithm_map:
-            main()
+            search_func, algorithm_name = algorithm_map[args.alg]
+            main(search_func, algorithm_name, total_time3, total_nodes3, args.fPath)
         else:
             print("Please select an algorithm among 'BFS', 'IDS', 'h1', 'h2', 'h3'")
     elif args.part == '3' and args.alg == 'all':
-        for alg_name, (search_func3, alg_desc) in algorithm_map.items():
-            for subdir in ['L8', 'L15', 'L24']:
-                folder_path = join(args.fpath, subdir)
-            result3 = {}
-            # for alg_name, (search_func, alg_desc) in algorithm_map.items():
-            timeouts = 0
-            for subdir, dirs, files in walk(folder_path):
-                total_time3, total_nodes3, solved_count = 0,0,0
-                for filename in files:
-                    if filename.endswith(".txt"):
-                        file_path = join(subdir, filename)
-                        # puzzle = get_puzzle(file_path)
-                        # puzzle_instance = EightPuzzle(puzzle)
-                        main(search_func3, alg_name)
-                        
-                # Store averaged results for this algorithm
-                if solved_count > 0:
-                    avg_time = total_time3 / solved_count
-                    avg_nodes = total_nodes3 / solved_count
-                else:
-                    avg_time, avg_nodes = 0, 0
-                result3[alg_desc] = (avg_time, avg_nodes, solved_count, timeouts)
-        for alg_desc, metrics in result3.items():
-            with open(output_file_path, 'a') as file:
-                file.write(f"{alg_desc} - Average Time: {metrics[0]}s, Average Nodes: {metrics[1]}, Puzzles Solved: {metrics[2]}, Timeouts: {metrics[3]}")
+        for subdir in ['L8', 'L15', 'L24']:
+            folder_path = join(args.fPath, subdir)
+            for alg_name, (search_func3, alg_desc) in algorithm_map.items():
+                result3 = {}
+                # for alg_name, (search_func, alg_desc) in algorithm_map.items():
+                timeouts = 0
+                for subdir1, dirs, files in walk(folder_path):
+                    for filename in files:
+                        if filename.endswith(".txt"):
+                            file_path = join(subdir1, filename)
+                            main(search_func3, alg_name, total_time3, total_nodes3, file_path)
+                            
+                    # Store averaged results for this algorithm
+                    if solved_count > 0:
+                        avg_time = total_time3 / solved_count
+                        avg_nodes = total_nodes3 / solved_count
+                    else:
+                        avg_time, avg_nodes = 0, 0
+                    result3[alg_desc] = (avg_time, avg_nodes, solved_count, timeouts)
+                    for alg_desc, metrics in result3.items():
+                        with open(output_file_path, 'a') as file:
+                            file.write(f"\n******************\nDepth: {subdir}, {alg_desc} - Average Time: {metrics[0]}s, Average Nodes: {metrics[1]}, Puzzles Solved: {metrics[2]}, Timeouts: {metrics[3]}\n******************\n")
     else:
         print("Please specify a valid part (2 or 3) and algorithm.")
