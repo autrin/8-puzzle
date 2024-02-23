@@ -9,6 +9,8 @@ import os
 from collections import defaultdict, deque, Counter
 from multiprocessing import Process, Queue
 from numpy import mean
+from os import walk
+from os.path import join, basename, exists
 
 
 class Problem(object):
@@ -441,7 +443,8 @@ def heuristic_h3(problem):
 def parse_arguments():
     parser = argparse.ArgumentParser(description='Solve the 8-puzzle problem.')
     parser.add_argument('--fPath', type=str, help='File path of the puzzle.')
-    parser.add_argument('--alg', type=str, choices=['BFS', 'IDS', 'h1', 'h2', 'h3'], help='Algorithm.')
+    parser.add_argument('--alg', type=str, choices=['BFS', 'IDS', 'h1', 'h2', 'h3', 'all'], help='Algorithm.')
+    parser.add_argument('--part', type=str, choices=['2', '3'], help='Specify which part of the project to run.')
     return parser.parse_args()
 
 
@@ -472,6 +475,7 @@ def run_search_algorithm(search_func, problem, result_queue):
                 "total_time": total_time,
                 "path": path,
             })
+            solved_count += 1
     except Exception as e:
         # In case of any exception, send it back to the main process
         result_queue.put({
@@ -479,6 +483,7 @@ def run_search_algorithm(search_func, problem, result_queue):
             "message": str(e),
         })
 
+    #? I can use the result queue for part 3
 
 algorithm_map = {
     'BFS': (breadth_first_search, "Breadth First Search"),
@@ -488,19 +493,24 @@ algorithm_map = {
     'h3': (heuristic_h3, "Heuristic H3"),
 }
 
-
-
-def main():
-    args = parse_arguments()
-    # Ensure the 'results' directory exists
-    results_dir = 'Test_results'
-    if not os.path.exists(results_dir):
-        os.makedirs(results_dir)  # Creates the directory if it does not exist
-
-    # Modify the output_file_path to place the results in the 'results' directory
-    # file_name = os.path.basename(args.fPath)  # Extract the filename from the path
-    output_file_name = 'part2_results.txt'
-    output_file_path = os.path.join(results_dir, output_file_name)  # Construct the full path
+def main(search_func, algorithm_name):
+    if args.part == '3' and args.alg == 'all':
+        # Ensure the 'Experiment_results' directory exists
+        results_dir = 'Experiment_results3'
+        if not os.path.exists(results_dir):
+            os.makedirs(results_dir)  # Creates the directory if it does not exist
+        output_file_name = 'part3_results.txt'
+        global output_file_path
+        output_file_path = os.path.join(results_dir, output_file_name)  # Construct the full path
+        args.fPath = file_path
+        search_func = search_func3
+    elif args.part == '2' and args.alg in algorithm_map:
+        results_dir = 'Test_results2'
+        if not os.path.exists(results_dir):
+            os.makedirs(results_dir)
+        # file_name = os.path.basename(args.fPath)  # Extract the filename from the path
+        output_file_name = 'part2_results.txt'
+        output_file_path = os.path.join(results_dir, output_file_name)
         
     # Load the puzzle from the specified file path
     puzzle = get_puzzle(args.fPath)
@@ -510,14 +520,14 @@ def main():
         print("Could not load the puzzle.")
         return
     try:
-        puzzle_instance = EightPuzzle(puzzle)
+        puzzle_instance = EightPuzzle(puzzle) # It will check inversion rank % 2 == 0
     except AssertionError as error:
         with open(output_file_path, 'a') as file:
             file.write(f"\nUnsolvable puzzle in file {args.fPath}: {error}")
         print(f"\nUnsolvable puzzle at {args.fPath}.")
         return
-    
-    search_func, algorithm_name = algorithm_map.get(args.alg, (None, "Unknown Algorithm"))
+    if args.part == 2:
+        search_func, algorithm_name = algorithm_map.get(args.alg, (None, "Unknown Algorithm"))
     if search_func is None:
         with open(output_file_path, 'a') as file:
             file.write(f"\nInvalid algorithm specified at {args.fPath}.\n")
@@ -533,13 +543,16 @@ def main():
     search_process.join(timeout=900)  # 15 minutes
 
     total_time = time.time() - start_time
-    seconds = int(total_time)
-    microseconds = int((total_time - seconds) * 1_000_000)
+    seconds = int(total_time)  # Whole seconds part
+    fractional_seconds = total_time - seconds  # Fractional part of the seconds
+    microseconds = int(fractional_seconds * 1_000_000)  # Convert fractional seconds to microseconds
+
     # Write results to file
     with open(output_file_path, 'a') as file:
         if search_process.is_alive():
             # If process is still alive after the timeout
             search_process.terminate()
+            timeouts += 1  # Track timeouts for additional insights
             search_process.join()
             file.write(f"Algorithm timed out after 15 minutes. Total time taken: >15 min\n")
             file.write("Total nodes generated: Data unavailable — process was terminated\n")
@@ -562,10 +575,46 @@ def main():
                     file.write(f"Path: {''.join(result['path'])}\n")
                     file.write(f"Algorithm was: {algorithm_name}\n")
                     file.write(f"Puzzle was at {args.fPath}")
+                    if args.part == '3' and args.alg == 'all':
+                        total_time3 += total_time
+                        total_nodes3 += result['nodes_generated']
             except queue.Empty:
                 file.write("No result was returned by the search algorithm.\n")
                 file.write(f"Puzzle was at {args.fPath}")
     print(f"Results written to {output_file_path}")
 
 if __name__ == '__main__':
-    main()
+    args = parse_arguments()
+    if args.part == '2':
+        if args.alg in algorithm_map:
+            main()
+        else:
+            print("Please select an algorithm among 'BFS', 'IDS', 'h1', 'h2', 'h3'")
+    elif args.part == '3' and args.alg == 'all':
+        for alg_name, (search_func3, alg_desc) in algorithm_map.items():
+            for subdir in ['L8', 'L15', 'L24']:
+                folder_path = join(args.fpath, subdir)
+            result3 = {}
+            # for alg_name, (search_func, alg_desc) in algorithm_map.items():
+            timeouts = 0
+            for subdir, dirs, files in walk(folder_path):
+                total_time3, total_nodes3, solved_count = 0,0,0
+                for filename in files:
+                    if filename.endswith(".txt"):
+                        file_path = join(subdir, filename)
+                        # puzzle = get_puzzle(file_path)
+                        # puzzle_instance = EightPuzzle(puzzle)
+                        main(search_func3, alg_name)
+                        
+                # Store averaged results for this algorithm
+                if solved_count > 0:
+                    avg_time = total_time3 / solved_count
+                    avg_nodes = total_nodes3 / solved_count
+                else:
+                    avg_time, avg_nodes = 0, 0
+                result3[alg_desc] = (avg_time, avg_nodes, solved_count, timeouts)
+        for alg_desc, metrics in result3.items():
+            with open(output_file_path, 'a') as file:
+                file.write(f"{alg_desc} - Average Time: {metrics[0]}s, Average Nodes: {metrics[1]}, Puzzles Solved: {metrics[2]}, Timeouts: {metrics[3]}")
+    else:
+        print("Please specify a valid part (2 or 3) and algorithm.")

@@ -1,0 +1,18 @@
+L8
+Breadth First Search - Average Time: 0.0007278323173522949s, Average Nodes: 232.4, Puzzles Solved: 20, Timeouts: 0
+Iterative Deepening Search - Average Time: 0.002623879909515381s, Average Nodes: 741.3, Puzzles Solved: 20, Timeouts: 0
+Heuristic H1 - Average Time: 0.00024012327194213867s, Average Nodes: 35.9, Puzzles Solved: 20, Timeouts: 0
+Heuristic H2 - Average Time: 0.0002587437629699707s, Average Nodes: 31.4, Puzzles Solved: 20, Timeouts: 0
+Heuristic H3 - Average Time: 0.0007131576538085937s, Average Nodes: 28.65, Puzzles Solved: 20, Timeouts: 0
+L15
+Breadth First Search - Average Time: 0.025487375259399415s, Average Nodes: 6813.7, Puzzles Solved: 20, Timeouts: 0
+Iterative Deepening Search - Average Time: 0.24366118907928466s, Average Nodes: 44642.85, Puzzles Solved: 20, Timeouts: 0
+Heuristic H1 - Average Time: 0.005173516273498535s, Average Nodes: 659.8, Puzzles Solved: 20, Timeouts: 0
+Heuristic H2 - Average Time: 0.007239508628845215s, Average Nodes: 721.55, Puzzles Solved: 20, Timeouts: 0
+Heuristic H3 - Average Time: 0.002873718738555908s, Average Nodes: 113.25, Puzzles Solved: 20, Timeouts: 0
+L24
+Breadth First Search - Average Time: 0.5422654986381531s, Average Nodes: 129354.7, Puzzles Solved: 20, Timeouts: 0
+Iterative Deepening Search - Average Time: 25.10629404783249s, Average Nodes: 5566781.15, Puzzles Solved: 20, Timeouts: 0
+Heuristic H1 - Average Time: 0.20626157522201538s, Average Nodes: 28064.15, Puzzles Solved: 20, Timeouts: 0
+Heuristic H2 - Average Time: 0.14114080667495726s, Average Nodes: 16494.9, Puzzles Solved: 20, Timeouts: 0
+Heuristic H3 - Average Time: 0.06626607179641723s, Average Nodes: 3202.05, Puzzles Solved: 20, Timeouts: 0
