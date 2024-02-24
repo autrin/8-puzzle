@@ -1,4 +1,4 @@
-# This program was written with the help of algorithms from AIMA.
+# This program was written with the help of algorithms from AIMA 4th edition.
 
 import argparse
 import heapq
