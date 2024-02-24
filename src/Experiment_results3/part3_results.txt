@@ -1,18 +1,1861 @@
-L8
-Breadth First Search - Average Time: 0.0007278323173522949s, Average Nodes: 232.4, Puzzles Solved: 20, Timeouts: 0
-Iterative Deepening Search - Average Time: 0.002623879909515381s, Average Nodes: 741.3, Puzzles Solved: 20, Timeouts: 0
-Heuristic H1 - Average Time: 0.00024012327194213867s, Average Nodes: 35.9, Puzzles Solved: 20, Timeouts: 0
-Heuristic H2 - Average Time: 0.0002587437629699707s, Average Nodes: 31.4, Puzzles Solved: 20, Timeouts: 0
-Heuristic H3 - Average Time: 0.0007131576538085937s, Average Nodes: 28.65, Puzzles Solved: 20, Timeouts: 0
-L15
-Breadth First Search - Average Time: 0.025487375259399415s, Average Nodes: 6813.7, Puzzles Solved: 20, Timeouts: 0
-Iterative Deepening Search - Average Time: 0.24366118907928466s, Average Nodes: 44642.85, Puzzles Solved: 20, Timeouts: 0
-Heuristic H1 - Average Time: 0.005173516273498535s, Average Nodes: 659.8, Puzzles Solved: 20, Timeouts: 0
-Heuristic H2 - Average Time: 0.007239508628845215s, Average Nodes: 721.55, Puzzles Solved: 20, Timeouts: 0
-Heuristic H3 - Average Time: 0.002873718738555908s, Average Nodes: 113.25, Puzzles Solved: 20, Timeouts: 0
-L24
-Breadth First Search - Average Time: 0.5422654986381531s, Average Nodes: 129354.7, Puzzles Solved: 20, Timeouts: 0
-Iterative Deepening Search - Average Time: 25.10629404783249s, Average Nodes: 5566781.15, Puzzles Solved: 20, Timeouts: 0
-Heuristic H1 - Average Time: 0.20626157522201538s, Average Nodes: 28064.15, Puzzles Solved: 20, Timeouts: 0
-Heuristic H2 - Average Time: 0.14114080667495726s, Average Nodes: 16494.9, Puzzles Solved: 20, Timeouts: 0
-Heuristic H3 - Average Time: 0.06626607179641723s, Average Nodes: 3202.05, Puzzles Solved: 20, Timeouts: 0
+The depth is shown in the directory.
+
+Total nodes generated: 258
+Total time taken: 0 sec 235768 microSec.
+Path length: 8
+Path: RRULDLUU
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L8/258.txt
+Total nodes generated: 158
+Total time taken: 0 sec 226968 microSec.
+Path length: 8
+Path: UULDRULL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L8/160.txt
+Total nodes generated: 164
+Total time taken: 0 sec 204448 microSec.
+Path length: 8
+Path: DDRRUULL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L8/164.txt
+Total nodes generated: 310
+Total time taken: 0 sec 230766 microSec.
+Path length: 8
+Path: LDRURULL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L8/158.txt
+Total nodes generated: 245
+Total time taken: 0 sec 268391 microSec.
+Path length: 8
+Path: RDLDRULU
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L8/238.txt
+Total nodes generated: 242
+Total time taken: 0 sec 223800 microSec.
+Path length: 8
+Path: RDLDRUUL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L8/210.txt
+Total nodes generated: 225
+Total time taken: 0 sec 213655 microSec.
+Path length: 8
+Path: RUULDRUL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L8/198.txt
+Total nodes generated: 255
+Total time taken: 0 sec 172685 microSec.
+Path length: 8
+Path: LLDDRULU
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L8/239.txt
+Total nodes generated: 203
+Total time taken: 0 sec 263118 microSec.
+Path length: 8
+Path: ULLDRULU
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L8/234.txt
+Total nodes generated: 238
+Total time taken: 0 sec 266678 microSec.
+Path length: 8
+Path: LULDRUUL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L8/208.txt
+Total nodes generated: 196
+Total time taken: 0 sec 260420 microSec.
+Path length: 8
+Path: ULULDRUL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L8/195.txt
+Total nodes generated: 267
+Total time taken: 0 sec 257153 microSec.
+Path length: 8
+Path: LLDRRULL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L8/154.txt
+Total nodes generated: 241
+Total time taken: 0 sec 323421 microSec.
+Path length: 8
+Path: LULDRULU
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L8/236.txt
+Total nodes generated: 302
+Total time taken: 0 sec 326061 microSec.
+Path length: 8
+Path: RULLDRUL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L8/193.txt
+Total nodes generated: 192
+Total time taken: 0 sec 237541 microSec.
+Path length: 8
+Path: DRURDLLU
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L8/225.txt
+Total nodes generated: 267
+Total time taken: 0 sec 284800 microSec.
+Path length: 8
+Path: LLURRULL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L8/152.txt
+Total nodes generated: 192
+Total time taken: 0 sec 363927 microSec.
+Path length: 8
+Path: URURDLLU
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L8/224.txt
+Total nodes generated: 256
+Total time taken: 0 sec 286947 microSec.
+Path length: 8
+Path: RRDDLLUU
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L8/256.txt
+Total nodes generated: 204
+Total time taken: 0 sec 206345 microSec.
+Path length: 8
+Path: URRDLLUU
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L8/250.txt
+Total nodes generated: 233
+Total time taken: 0 sec 244145 microSec.
+Path length: 8
+Path: RURDLLUU
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L8/253.txt
+******************
+Depth: L8, Breadth First Search - Average Time: 254852.28300094604microsconds, Average Nodes: 232.4, Puzzles Solved: 20, Timeouts: 0
+******************
+
+Total nodes generated: 598
+Total time taken: 0 sec 325943 microSec.
+Path length: 8
+Path: RRULDLUU
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L8/258.txt
+Total nodes generated: 874
+Total time taken: 0 sec 316787 microSec.
+Path length: 8
+Path: ULURDLUL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L8/160.txt
+Total nodes generated: 959
+Total time taken: 0 sec 290452 microSec.
+Path length: 8
+Path: DDRRUULL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L8/164.txt
+Total nodes generated: 895
+Total time taken: 0 sec 241955 microSec.
+Path length: 8
+Path: LDRURULL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L8/158.txt
+Total nodes generated: 673
+Total time taken: 0 sec 338928 microSec.
+Path length: 8
+Path: RDLDRULU
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L8/238.txt
+Total nodes generated: 679
+Total time taken: 0 sec 300060 microSec.
+Path length: 8
+Path: RDLDRUUL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L8/210.txt
+Total nodes generated: 650
+Total time taken: 0 sec 287667 microSec.
+Path length: 8
+Path: RULURDLU
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L8/198.txt
+Total nodes generated: 620
+Total time taken: 0 sec 220702 microSec.
+Path length: 8
+Path: LLDDRULU
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L8/239.txt
+Total nodes generated: 827
+Total time taken: 0 sec 235924 microSec.
+Path length: 8
+Path: ULLDRULU
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L8/234.txt
+Total nodes generated: 679
+Total time taken: 0 sec 221046 microSec.
+Path length: 8
+Path: LULDRUUL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L8/208.txt
+Total nodes generated: 804
+Total time taken: 0 sec 210429 microSec.
+Path length: 8
+Path: ULLURDLU
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L8/195.txt
+Total nodes generated: 572
+Total time taken: 0 sec 191443 microSec.
+Path length: 8
+Path: LLDRRULL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L8/154.txt
+Total nodes generated: 598
+Total time taken: 0 sec 207095 microSec.
+Path length: 8
+Path: LLURDLUU
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L8/236.txt
+Total nodes generated: 936
+Total time taken: 0 sec 341988 microSec.
+Path length: 8
+Path: RULLDRUL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L8/193.txt
+Total nodes generated: 871
+Total time taken: 0 sec 233224 microSec.
+Path length: 8
+Path: DRURDLLU
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L8/225.txt
+Total nodes generated: 572
+Total time taken: 0 sec 235063 microSec.
+Path length: 8
+Path: LLURRULL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L8/152.txt
+Total nodes generated: 871
+Total time taken: 0 sec 227133 microSec.
+Path length: 8
+Path: URURDLLU
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L8/224.txt
+Total nodes generated: 613
+Total time taken: 0 sec 197383 microSec.
+Path length: 8
+Path: RRDDLLUU
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L8/256.txt
+Total nodes generated: 820
+Total time taken: 0 sec 199182 microSec.
+Path length: 8
+Path: URRDLLUU
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L8/250.txt
+Total nodes generated: 715
+Total time taken: 0 sec 204301 microSec.
+Path length: 8
+Path: RURDLLUU
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L8/253.txt
+******************
+Depth: L8, Iterative Deepening Search - Average Time: 251335.79969406128microsconds, Average Nodes: 741.3, Puzzles Solved: 20, Timeouts: 0
+******************
+
+Total nodes generated: 38
+Total time taken: 0 sec 383648 microSec.
+Path length: 8
+Path: RRULDLUU
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L8/258.txt
+Total nodes generated: 37
+Total time taken: 0 sec 214954 microSec.
+Path length: 8
+Path: ULURDLUL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L8/160.txt
+Total nodes generated: 16
+Total time taken: 0 sec 200819 microSec.
+Path length: 8
+Path: DDRRUULL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L8/164.txt
+Total nodes generated: 35
+Total time taken: 0 sec 197494 microSec.
+Path length: 8
+Path: LDRURULL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L8/158.txt
+Total nodes generated: 44
+Total time taken: 0 sec 300398 microSec.
+Path length: 8
+Path: RDLDRULU
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L8/238.txt
+Total nodes generated: 52
+Total time taken: 0 sec 244770 microSec.
+Path length: 8
+Path: RDLDRUUL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L8/210.txt
+Total nodes generated: 44
+Total time taken: 0 sec 200186 microSec.
+Path length: 8
+Path: RUULDRUL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L8/198.txt
+Total nodes generated: 35
+Total time taken: 0 sec 226263 microSec.
+Path length: 8
+Path: LLDDRULU
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L8/239.txt
+Total nodes generated: 32
+Total time taken: 0 sec 324064 microSec.
+Path length: 8
+Path: ULLDRULU
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L8/234.txt
+Total nodes generated: 33
+Total time taken: 0 sec 255892 microSec.
+Path length: 8
+Path: LULDRUUL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L8/208.txt
+Total nodes generated: 39
+Total time taken: 0 sec 417530 microSec.
+Path length: 8
+Path: ULULDRUL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L8/195.txt
+Total nodes generated: 40
+Total time taken: 0 sec 405174 microSec.
+Path length: 8
+Path: LLDRRULL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L8/154.txt
+Total nodes generated: 37
+Total time taken: 0 sec 332452 microSec.
+Path length: 8
+Path: LULDRULU
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L8/236.txt
+Total nodes generated: 47
+Total time taken: 0 sec 337487 microSec.
+Path length: 8
+Path: RULLDRUL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L8/193.txt
+Total nodes generated: 52
+Total time taken: 0 sec 380838 microSec.
+Path length: 8
+Path: DRURDLLU
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L8/225.txt
+Total nodes generated: 17
+Total time taken: 0 sec 403177 microSec.
+Path length: 8
+Path: LLURRULL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L8/152.txt
+Total nodes generated: 36
+Total time taken: 0 sec 328410 microSec.
+Path length: 8
+Path: URURDLLU
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L8/224.txt
+Total nodes generated: 16
+Total time taken: 0 sec 393513 microSec.
+Path length: 8
+Path: RRDDLLUU
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L8/256.txt
+Total nodes generated: 26
+Total time taken: 0 sec 304639 microSec.
+Path length: 8
+Path: URRDLLUU
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L8/250.txt
+Total nodes generated: 42
+Total time taken: 0 sec 244393 microSec.
+Path length: 8
+Path: RURDLLUU
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L8/253.txt
+******************
+Depth: L8, Heuristic H1 - Average Time: 304805.66024780273microsconds, Average Nodes: 35.9, Puzzles Solved: 20, Timeouts: 0
+******************
+
+Total nodes generated: 34
+Total time taken: 0 sec 214471 microSec.
+Path length: 8
+Path: RRULDLUU
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L8/258.txt
+Total nodes generated: 34
+Total time taken: 0 sec 230006 microSec.
+Path length: 8
+Path: UULDRULL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L8/160.txt
+Total nodes generated: 16
+Total time taken: 0 sec 384548 microSec.
+Path length: 8
+Path: DDRRUULL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L8/164.txt
+Total nodes generated: 19
+Total time taken: 0 sec 370329 microSec.
+Path length: 8
+Path: LDRURULL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L8/158.txt
+Total nodes generated: 31
+Total time taken: 0 sec 287876 microSec.
+Path length: 8
+Path: RDLDRULU
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L8/238.txt
+Total nodes generated: 74
+Total time taken: 0 sec 222709 microSec.
+Path length: 8
+Path: RDLDRUUL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L8/210.txt
+Total nodes generated: 25
+Total time taken: 0 sec 316923 microSec.
+Path length: 8
+Path: RULURDLU
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L8/198.txt
+Total nodes generated: 23
+Total time taken: 0 sec 197814 microSec.
+Path length: 8
+Path: LLDDRULU
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L8/239.txt
+Total nodes generated: 27
+Total time taken: 0 sec 187965 microSec.
+Path length: 8
+Path: ULLDRULU
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L8/234.txt
+Total nodes generated: 21
+Total time taken: 0 sec 190905 microSec.
+Path length: 8
+Path: LULDRUUL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L8/208.txt
+Total nodes generated: 30
+Total time taken: 0 sec 205742 microSec.
+Path length: 8
+Path: ULLURDLU
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L8/195.txt
+Total nodes generated: 49
+Total time taken: 0 sec 208346 microSec.
+Path length: 8
+Path: LLDRRULL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L8/154.txt
+Total nodes generated: 17
+Total time taken: 0 sec 269871 microSec.
+Path length: 8
+Path: LLURDLUU
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L8/236.txt
+Total nodes generated: 54
+Total time taken: 0 sec 204176 microSec.
+Path length: 8
+Path: RULLDRUL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L8/193.txt
+Total nodes generated: 54
+Total time taken: 0 sec 204236 microSec.
+Path length: 8
+Path: DRURDLLU
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L8/225.txt
+Total nodes generated: 16
+Total time taken: 0 sec 198444 microSec.
+Path length: 8
+Path: LLURRULL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L8/152.txt
+Total nodes generated: 37
+Total time taken: 0 sec 212515 microSec.
+Path length: 8
+Path: URURDLLU
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L8/224.txt
+Total nodes generated: 16
+Total time taken: 0 sec 248738 microSec.
+Path length: 8
+Path: RRDDLLUU
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L8/256.txt
+Total nodes generated: 17
+Total time taken: 0 sec 522914 microSec.
+Path length: 8
+Path: URRDLLUU
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L8/250.txt
+Total nodes generated: 34
+Total time taken: 0 sec 385255 microSec.
+Path length: 8
+Path: RURDLLUU
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L8/253.txt
+******************
+Depth: L8, Heuristic H2 - Average Time: 263189.68534469604microsconds, Average Nodes: 31.4, Puzzles Solved: 20, Timeouts: 0
+******************
+
+Total nodes generated: 69
+Total time taken: 0 sec 388916 microSec.
+Path length: 8
+Path: RRULDLUU
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L8/258.txt
+Total nodes generated: 17
+Total time taken: 0 sec 340602 microSec.
+Path length: 8
+Path: UULDRULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L8/160.txt
+Total nodes generated: 14
+Total time taken: 0 sec 218569 microSec.
+Path length: 8
+Path: DDRRUULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L8/164.txt
+Total nodes generated: 18
+Total time taken: 0 sec 279239 microSec.
+Path length: 8
+Path: LDRURULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L8/158.txt
+Total nodes generated: 23
+Total time taken: 0 sec 210417 microSec.
+Path length: 8
+Path: RDLDRULU
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L8/238.txt
+Total nodes generated: 21
+Total time taken: 0 sec 182472 microSec.
+Path length: 8
+Path: RDLDRUUL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L8/210.txt
+Total nodes generated: 18
+Total time taken: 0 sec 194625 microSec.
+Path length: 8
+Path: RUULDRUL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L8/198.txt
+Total nodes generated: 55
+Total time taken: 0 sec 278971 microSec.
+Path length: 8
+Path: LLDDRULU
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L8/239.txt
+Total nodes generated: 26
+Total time taken: 0 sec 397048 microSec.
+Path length: 8
+Path: ULLDRULU
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L8/234.txt
+Total nodes generated: 21
+Total time taken: 0 sec 297359 microSec.
+Path length: 8
+Path: LULDRUUL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L8/208.txt
+Total nodes generated: 19
+Total time taken: 0 sec 262564 microSec.
+Path length: 8
+Path: ULULDRUL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L8/195.txt
+Total nodes generated: 16
+Total time taken: 0 sec 382045 microSec.
+Path length: 8
+Path: LLDRRULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L8/154.txt
+Total nodes generated: 28
+Total time taken: 0 sec 305827 microSec.
+Path length: 8
+Path: LULDRULU
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L8/236.txt
+Total nodes generated: 23
+Total time taken: 0 sec 207021 microSec.
+Path length: 8
+Path: RULLDRUL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L8/193.txt
+Total nodes generated: 26
+Total time taken: 0 sec 209465 microSec.
+Path length: 8
+Path: DRURDLLU
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L8/225.txt
+Total nodes generated: 21
+Total time taken: 0 sec 206387 microSec.
+Path length: 8
+Path: LLURRULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L8/152.txt
+Total nodes generated: 25
+Total time taken: 0 sec 336131 microSec.
+Path length: 8
+Path: URURDLLU
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L8/224.txt
+Total nodes generated: 43
+Total time taken: 0 sec 210216 microSec.
+Path length: 8
+Path: RRDDLLUU
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L8/256.txt
+Total nodes generated: 37
+Total time taken: 0 sec 197575 microSec.
+Path length: 8
+Path: URRDLLUU
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L8/250.txt
+Total nodes generated: 53
+Total time taken: 0 sec 188169 microSec.
+Path length: 8
+Path: RURDLLUU
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L8/253.txt
+******************
+Depth: L8, Heuristic H3 - Average Time: 264681.3750267029microsconds, Average Nodes: 28.65, Puzzles Solved: 20, Timeouts: 0
+******************
+
+Total nodes generated: 7026
+Total time taken: 0 sec 258466 microSec.
+Path length: 15
+Path: RDRUULDLDRRUULL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L15/5120.txt
+Total nodes generated: 6342
+Total time taken: 0 sec 314077 microSec.
+Path length: 15
+Path: URDRDLULDRRUULL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L15/5108.txt
+Total nodes generated: 6529
+Total time taken: 0 sec 378992 microSec.
+Path length: 15
+Path: ULDRRUULDDLURUL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L15/4798.txt
+Total nodes generated: 7904
+Total time taken: 0 sec 258079 microSec.
+Path length: 15
+Path: RULDRRDLLURRULL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L15/4773.txt
+Total nodes generated: 6047
+Total time taken: 0 sec 328680 microSec.
+Path length: 15
+Path: DLLURRDLLURRULL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L15/4767.txt
+Total nodes generated: 6535
+Total time taken: 0 sec 231011 microSec.
+Path length: 15
+Path: URDLDRUULDRDLUU
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L15/5109.txt
+Total nodes generated: 7639
+Total time taken: 0 sec 253825 microSec.
+Path length: 15
+Path: RDLLURDLDRRUULL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L15/5123.txt
+Total nodes generated: 6923
+Total time taken: 0 sec 386536 microSec.
+Path length: 15
+Path: ULLDRRDLLURRULL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L15/4771.txt
+Total nodes generated: 6621
+Total time taken: 0 sec 256507 microSec.
+Path length: 15
+Path: ULDLURDLDRRUULL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L15/5126.txt
+Total nodes generated: 7007
+Total time taken: 0 sec 264868 microSec.
+Path length: 15
+Path: RDDLURDLLURRULL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L15/4775.txt
+Total nodes generated: 5846
+Total time taken: 0 sec 258674 microSec.
+Path length: 15
+Path: DLLUURDLDRRUULL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L15/5127.txt
+Total nodes generated: 6842
+Total time taken: 0 sec 521778 microSec.
+Path length: 15
+Path: ULURRDDLLURRULL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L15/4789.txt
+Total nodes generated: 5544
+Total time taken: 0 sec 459600 microSec.
+Path length: 15
+Path: DDLUURDLDRRUULL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L15/5130.txt
+Total nodes generated: 7915
+Total time taken: 0 sec 331813 microSec.
+Path length: 15
+Path: LDDRRUULDDLURUL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L15/4800.txt
+Total nodes generated: 5486
+Total time taken: 0 sec 352440 microSec.
+Path length: 15
+Path: DLURULDLDRRUULL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L15/5115.txt
+Total nodes generated: 5686
+Total time taken: 0 sec 454764 microSec.
+Path length: 15
+Path: DLULURDDLURRULL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L15/4784.txt
+Total nodes generated: 6458
+Total time taken: 0 sec 262267 microSec.
+Path length: 15
+Path: DLDRURDLLURRULL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L15/4778.txt
+Total nodes generated: 8153
+Total time taken: 0 sec 235124 microSec.
+Path length: 15
+Path: LURURDDLLURRULL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L15/4793.txt
+Total nodes generated: 7465
+Total time taken: 0 sec 233690 microSec.
+Path length: 15
+Path: LDLURRDLLURRULL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L15/4768.txt
+Total nodes generated: 8306
+Total time taken: 0 sec 266969 microSec.
+Path length: 15
+Path: RRULDRDLLURRULL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L15/4780.txt
+******************
+Depth: L15, Breadth First Search - Average Time: 315408.5040092468microsconds, Average Nodes: 6813.7, Puzzles Solved: 20, Timeouts: 0
+******************
+
+Total nodes generated: 44948
+Total time taken: 0 sec 547022 microSec.
+Path length: 15
+Path: RDRUULDLDRRUULL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L15/5120.txt
+Total nodes generated: 49679
+Total time taken: 0 sec 575711 microSec.
+Path length: 15
+Path: URDRDLULDRRUULL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L15/5108.txt
+Total nodes generated: 47577
+Total time taken: 0 sec 536077 microSec.
+Path length: 15
+Path: ULDRRULDLURRULL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L15/4798.txt
+Total nodes generated: 37403
+Total time taken: 0 sec 340883 microSec.
+Path length: 15
+Path: RULDRRDLLURRULL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L15/4773.txt
+Total nodes generated: 51623
+Total time taken: 0 sec 395789 microSec.
+Path length: 15
+Path: DLLURRDLLURRULL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L15/4767.txt
+Total nodes generated: 47001
+Total time taken: 0 sec 384757 microSec.
+Path length: 15
+Path: URRDDLULDRRUULL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L15/5109.txt
+Total nodes generated: 39482
+Total time taken: 0 sec 384243 microSec.
+Path length: 15
+Path: RDLLURDLDRRUULL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L15/5123.txt
+Total nodes generated: 45547
+Total time taken: 0 sec 564504 microSec.
+Path length: 15
+Path: ULLDRRDLLURRULL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L15/4771.txt
+Total nodes generated: 45936
+Total time taken: 0 sec 440320 microSec.
+Path length: 15
+Path: ULLDRULDDRRUULL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L15/5126.txt
+Total nodes generated: 42811
+Total time taken: 0 sec 538472 microSec.
+Path length: 15
+Path: RDLDRULDLURRULL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L15/4775.txt
+Total nodes generated: 53077
+Total time taken: 0 sec 495548 microSec.
+Path length: 15
+Path: DLLUURDLDRRUULL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L15/5127.txt
+Total nodes generated: 45686
+Total time taken: 0 sec 388763 microSec.
+Path length: 15
+Path: ULURRDDLLURRULL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L15/4789.txt
+Total nodes generated: 55062
+Total time taken: 0 sec 441151 microSec.
+Path length: 15
+Path: DDLUURDLDRRUULL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L15/5130.txt
+Total nodes generated: 37408
+Total time taken: 0 sec 357793 microSec.
+Path length: 15
+Path: LDDRRULDLURRULL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L15/4800.txt
+Total nodes generated: 55097
+Total time taken: 0 sec 436548 microSec.
+Path length: 15
+Path: DLURULDLDRRUULL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L15/5115.txt
+Total nodes generated: 34439
+Total time taken: 0 sec 348601 microSec.
+Path length: 15
+Path: LLURDRDLLURRULL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L15/4784.txt
+Total nodes generated: 48621
+Total time taken: 0 sec 414741 microSec.
+Path length: 15
+Path: DLDRURDLLURRULL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L15/4778.txt
+Total nodes generated: 35547
+Total time taken: 0 sec 351652 microSec.
+Path length: 15
+Path: LURURDDLLURRULL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L15/4793.txt
+Total nodes generated: 41474
+Total time taken: 0 sec 372400 microSec.
+Path length: 15
+Path: LDLURRDLLURRULL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L15/4768.txt
+Total nodes generated: 34439
+Total time taken: 0 sec 349483 microSec.
+Path length: 15
+Path: RRULDRDLLURRULL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L15/4780.txt
+******************
+Depth: L15, Iterative Deepening Search - Average Time: 433223.33097457886microsconds, Average Nodes: 44642.85, Puzzles Solved: 20, Timeouts: 0
+******************
+
+Total nodes generated: 513
+Total time taken: 0 sec 186393 microSec.
+Path length: 15
+Path: RDRUULDLDRRUULL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L15/5120.txt
+Total nodes generated: 681
+Total time taken: 0 sec 208556 microSec.
+Path length: 15
+Path: URDRDLULDRRUULL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L15/5108.txt
+Total nodes generated: 748
+Total time taken: 0 sec 185727 microSec.
+Path length: 15
+Path: ULDRRULDLURRULL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L15/4798.txt
+Total nodes generated: 554
+Total time taken: 0 sec 206508 microSec.
+Path length: 15
+Path: RULDRRDLLURRULL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L15/4773.txt
+Total nodes generated: 576
+Total time taken: 0 sec 210611 microSec.
+Path length: 15
+Path: DLLURRDLLURRULL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L15/4767.txt
+Total nodes generated: 814
+Total time taken: 0 sec 228315 microSec.
+Path length: 15
+Path: URDLDRUULDRDLUU
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L15/5109.txt
+Total nodes generated: 665
+Total time taken: 0 sec 456020 microSec.
+Path length: 15
+Path: RDLLURDLDRRUULL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L15/5123.txt
+Total nodes generated: 552
+Total time taken: 0 sec 211131 microSec.
+Path length: 15
+Path: ULLDRRDLLURRULL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L15/4771.txt
+Total nodes generated: 623
+Total time taken: 0 sec 179713 microSec.
+Path length: 15
+Path: ULLDRULDDRRUULL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L15/5126.txt
+Total nodes generated: 695
+Total time taken: 0 sec 187626 microSec.
+Path length: 15
+Path: RDLDRUULDDLURUL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L15/4775.txt
+Total nodes generated: 822
+Total time taken: 0 sec 241141 microSec.
+Path length: 15
+Path: DLLUURDLDRRUULL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L15/5127.txt
+Total nodes generated: 701
+Total time taken: 0 sec 230856 microSec.
+Path length: 15
+Path: ULURRDDLLURRULL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L15/4789.txt
+Total nodes generated: 723
+Total time taken: 0 sec 202719 microSec.
+Path length: 15
+Path: DDLUURDLDRRUULL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L15/5130.txt
+Total nodes generated: 678
+Total time taken: 0 sec 199071 microSec.
+Path length: 15
+Path: LDDRRULDLURRULL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L15/4800.txt
+Total nodes generated: 585
+Total time taken: 0 sec 210606 microSec.
+Path length: 15
+Path: DLURULDLDRRUULL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L15/5115.txt
+Total nodes generated: 604
+Total time taken: 0 sec 190521 microSec.
+Path length: 15
+Path: DLULURDDLURRULL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L15/4784.txt
+Total nodes generated: 689
+Total time taken: 0 sec 218677 microSec.
+Path length: 15
+Path: DLDRURDLLURRULL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L15/4778.txt
+Total nodes generated: 679
+Total time taken: 0 sec 206870 microSec.
+Path length: 15
+Path: LURURDDLLURRULL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L15/4793.txt
+Total nodes generated: 637
+Total time taken: 0 sec 220180 microSec.
+Path length: 15
+Path: LDLURRDLLURRULL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L15/4768.txt
+Total nodes generated: 657
+Total time taken: 0 sec 221343 microSec.
+Path length: 15
+Path: RRULDRDLLURRULL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L15/4780.txt
+******************
+Depth: L15, Heuristic H1 - Average Time: 220129.7163963318microsconds, Average Nodes: 659.8, Puzzles Solved: 20, Timeouts: 0
+******************
+
+Total nodes generated: 467
+Total time taken: 0 sec 236805 microSec.
+Path length: 15
+Path: RDRUULDLDRRUULL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L15/5120.txt
+Total nodes generated: 786
+Total time taken: 0 sec 211846 microSec.
+Path length: 17
+Path: URDLDRURULLDRDLUU
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L15/5108.txt
+Total nodes generated: 650
+Total time taken: 0 sec 209041 microSec.
+Path length: 15
+Path: ULDRRULDLURRULL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L15/4798.txt
+Total nodes generated: 517
+Total time taken: 0 sec 207878 microSec.
+Path length: 15
+Path: RULDRRDLLURRULL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L15/4773.txt
+Total nodes generated: 337
+Total time taken: 0 sec 201066 microSec.
+Path length: 15
+Path: DLLURRDLLURRULL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L15/4767.txt
+Total nodes generated: 511
+Total time taken: 0 sec 209069 microSec.
+Path length: 15
+Path: URDLDRUULDRDLUU
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L15/5109.txt
+Total nodes generated: 1069
+Total time taken: 0 sec 200221 microSec.
+Path length: 15
+Path: RDLLURDLDRRUULL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L15/5123.txt
+Total nodes generated: 565
+Total time taken: 0 sec 205655 microSec.
+Path length: 15
+Path: ULLDRRDLLURRULL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L15/4771.txt
+Total nodes generated: 459
+Total time taken: 0 sec 199142 microSec.
+Path length: 15
+Path: ULLDRULDDRRUULL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L15/5126.txt
+Total nodes generated: 638
+Total time taken: 0 sec 220031 microSec.
+Path length: 15
+Path: RDDLURDLLURRULL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L15/4775.txt
+Total nodes generated: 1042
+Total time taken: 0 sec 210272 microSec.
+Path length: 17
+Path: ULLDDRRULURDDLLUU
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L15/5127.txt
+Total nodes generated: 1221
+Total time taken: 0 sec 258530 microSec.
+Path length: 15
+Path: ULURRDDLLURRULL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L15/4789.txt
+Total nodes generated: 1008
+Total time taken: 0 sec 245838 microSec.
+Path length: 15
+Path: DDLUURDLDRRUULL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L15/5130.txt
+Total nodes generated: 657
+Total time taken: 0 sec 235381 microSec.
+Path length: 15
+Path: LDDRRULDLURRULL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L15/4800.txt
+Total nodes generated: 426
+Total time taken: 0 sec 183438 microSec.
+Path length: 17
+Path: DLULDRURULDDRUULL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L15/5115.txt
+Total nodes generated: 761
+Total time taken: 0 sec 201104 microSec.
+Path length: 15
+Path: DLULURDDLURRULL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L15/4784.txt
+Total nodes generated: 956
+Total time taken: 0 sec 224219 microSec.
+Path length: 15
+Path: DLDRURDLLURRULL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L15/4778.txt
+Total nodes generated: 916
+Total time taken: 0 sec 219619 microSec.
+Path length: 15
+Path: LURURDDLLURRULL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L15/4793.txt
+Total nodes generated: 602
+Total time taken: 0 sec 190973 microSec.
+Path length: 15
+Path: LDLURRDLLURRULL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L15/4768.txt
+Total nodes generated: 843
+Total time taken: 0 sec 204406 microSec.
+Path length: 15
+Path: RRULDRDLLURRULL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L15/4780.txt
+******************
+Depth: L15, Heuristic H2 - Average Time: 213727.2834777832microsconds, Average Nodes: 721.55, Puzzles Solved: 20, Timeouts: 0
+******************
+
+Total nodes generated: 56
+Total time taken: 0 sec 183624 microSec.
+Path length: 15
+Path: RDRUULDLDRRUULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L15/5120.txt
+Total nodes generated: 92
+Total time taken: 0 sec 199841 microSec.
+Path length: 15
+Path: URDRDLULDRRUULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L15/5108.txt
+Total nodes generated: 270
+Total time taken: 0 sec 221858 microSec.
+Path length: 15
+Path: ULDRRULDLURRULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L15/4798.txt
+Total nodes generated: 117
+Total time taken: 0 sec 204272 microSec.
+Path length: 15
+Path: RULDRRDLLURRULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L15/4773.txt
+Total nodes generated: 97
+Total time taken: 0 sec 196957 microSec.
+Path length: 15
+Path: DLLURRDLLURRULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L15/4767.txt
+Total nodes generated: 94
+Total time taken: 0 sec 202974 microSec.
+Path length: 15
+Path: URRDDLULDRRUULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L15/5109.txt
+Total nodes generated: 55
+Total time taken: 0 sec 224485 microSec.
+Path length: 15
+Path: RDLLURDLDRRUULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L15/5123.txt
+Total nodes generated: 108
+Total time taken: 0 sec 440316 microSec.
+Path length: 15
+Path: ULLDRRDLLURRULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L15/4771.txt
+Total nodes generated: 42
+Total time taken: 0 sec 215699 microSec.
+Path length: 15
+Path: ULLDRULDDRRUULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L15/5126.txt
+Total nodes generated: 118
+Total time taken: 0 sec 204798 microSec.
+Path length: 15
+Path: RDLDRULDLURRULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L15/4775.txt
+Total nodes generated: 163
+Total time taken: 0 sec 204619 microSec.
+Path length: 15
+Path: DLLUURDLDRRUULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L15/5127.txt
+Total nodes generated: 131
+Total time taken: 0 sec 200725 microSec.
+Path length: 15
+Path: ULURRDDLLURRULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L15/4789.txt
+Total nodes generated: 122
+Total time taken: 0 sec 195804 microSec.
+Path length: 15
+Path: DDLUURDLDRRUULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L15/5130.txt
+Total nodes generated: 218
+Total time taken: 0 sec 204684 microSec.
+Path length: 17
+Path: RDDLURULLDRDRUULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L15/4800.txt
+Total nodes generated: 43
+Total time taken: 0 sec 225610 microSec.
+Path length: 15
+Path: DLURULDLDRRUULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L15/5115.txt
+Total nodes generated: 146
+Total time taken: 0 sec 242864 microSec.
+Path length: 15
+Path: DLULURDDLURRULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L15/4784.txt
+Total nodes generated: 116
+Total time taken: 0 sec 299819 microSec.
+Path length: 15
+Path: DLDRURDLLURRULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L15/4778.txt
+Total nodes generated: 87
+Total time taken: 0 sec 216315 microSec.
+Path length: 15
+Path: LURURDDLLURRULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L15/4793.txt
+Total nodes generated: 100
+Total time taken: 0 sec 187860 microSec.
+Path length: 15
+Path: LDLURRDLLURRULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L15/4768.txt
+Total nodes generated: 90
+Total time taken: 0 sec 187248 microSec.
+Path length: 15
+Path: RRULDRDLLURRULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L15/4780.txt
+******************
+Depth: L15, Heuristic H3 - Average Time: 223019.0873146057microsconds, Average Nodes: 113.25, Puzzles Solved: 20, Timeouts: 0
+******************
+
+Total nodes generated: 122866
+Total time taken: 0 sec 773394 microSec.
+Path length: 24
+Path: DDRRULLDRRULDLURULDDRUUL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L24/131449.txt
+Total nodes generated: 131972
+Total time taken: 0 sec 730982 microSec.
+Path length: 24
+Path: DLUURDDRULLURRDLULDDRULU
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L24/131271.txt
+Total nodes generated: 137637
+Total time taken: 0 sec 733081 microSec.
+Path length: 24
+Path: URDLDRULLDRUULDRURDLDLUU
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L24/131311.txt
+Total nodes generated: 130428
+Total time taken: 0 sec 618781 microSec.
+Path length: 24
+Path: URRDLLURRULDDRUULLDDRUUL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L24/131304.txt
+Total nodes generated: 138165
+Total time taken: 0 sec 679250 microSec.
+Path length: 24
+Path: RRUULDRULLDDRURULLDDRUUL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L24/131264.txt
+Total nodes generated: 138602
+Total time taken: 0 sec 684928 microSec.
+Path length: 24
+Path: RRUULLDDRRUULDRULLDDRUUL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L24/131274.txt
+Total nodes generated: 135213
+Total time taken: 0 sec 634001 microSec.
+Path length: 24
+Path: RURDLULDRRUULDRULLDRDLUU
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L24/131248.txt
+Total nodes generated: 139859
+Total time taken: 0 sec 625565 microSec.
+Path length: 24
+Path: ULDDRURDLULURRDLULDDRUUL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L24/131370.txt
+Total nodes generated: 128105
+Total time taken: 0 sec 636537 microSec.
+Path length: 24
+Path: ULULDDRUULDRURDLULDDRUUL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L24/131400.txt
+Total nodes generated: 139444
+Total time taken: 0 sec 727337 microSec.
+Path length: 24
+Path: RRULULDDRULURRDLULDDRUUL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L24/131374.txt
+Total nodes generated: 118023
+Total time taken: 0 sec 609759 microSec.
+Path length: 24
+Path: UULDDLURRDLUURDLULDDRUUL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L24/131406.txt
+Total nodes generated: 117563
+Total time taken: 0 sec 580328 microSec.
+Path length: 24
+Path: DDRUULDDRULURRDLULDDRUUL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L24/131378.txt
+Total nodes generated: 116536
+Total time taken: 0 sec 590180 microSec.
+Path length: 24
+Path: UULDDRUULLDDRRULULDDRUUL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L24/131345.txt
+Total nodes generated: 137777
+Total time taken: 0 sec 658042 microSec.
+Path length: 24
+Path: LLDDRUURDDLUURDLULDDRUUL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L24/131425.txt
+Total nodes generated: 116877
+Total time taken: 0 sec 611002 microSec.
+Path length: 24
+Path: DDRUURDLULDRURDLULDDRUUL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L24/131394.txt
+Total nodes generated: 139469
+Total time taken: 0 sec 774608 microSec.
+Path length: 24
+Path: RRULULDDRRULDLURULDDRUUL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L24/131455.txt
+Total nodes generated: 128649
+Total time taken: 0 sec 756216 microSec.
+Path length: 24
+Path: DRULDDRRULLDRRULULDDRUUL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L24/131324.txt
+Total nodes generated: 135800
+Total time taken: 0 sec 705364 microSec.
+Path length: 24
+Path: LURULLDRDRUULDRULLDDRUUL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L24/131279.txt
+Total nodes generated: 117666
+Total time taken: 0 sec 605541 microSec.
+Path length: 24
+Path: DDLUULDDRULURDRULLDDRUUL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L24/131286.txt
+Total nodes generated: 116443
+Total time taken: 0 sec 694448 microSec.
+Path length: 24
+Path: UURDDRUULDLDRURULLDDRUUL
+Algorithm was: BFS
+Puzzle was at  8-puzzle/test/Part3/L24/131256.txt
+******************
+Depth: L24, Breadth First Search - Average Time: 671467.7572250366microsconds, Average Nodes: 129354.7, Puzzles Solved: 20, Timeouts: 0
+******************
+
+Total nodes generated: 6083506
+Total time taken: 27 sec 52264 microSec.
+Path length: 24
+Path: DRDLURRDLLURRDLUULDDRUUL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L24/131449.txt
+Total nodes generated: 7437929
+Total time taken: 33 sec 6196 microSec.
+Path length: 24
+Path: ULDRDLURDRULURDLULDDRUUL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L24/131271.txt
+Total nodes generated: 6338657
+Total time taken: 29 sec 64914 microSec.
+Path length: 24
+Path: RULLDRDRUULDDRUULLDDRUUL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L24/131311.txt
+Total nodes generated: 4403471
+Total time taken: 19 sec 367448 microSec.
+Path length: 24
+Path: RRUULDRDLULURRDDLUURDLLU
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L24/131304.txt
+Total nodes generated: 4144611
+Total time taken: 18 sec 323508 microSec.
+Path length: 24
+Path: RRULURDLULDDRURULLDDRUUL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L24/131264.txt
+Total nodes generated: 4326684
+Total time taken: 18 sec 935328 microSec.
+Path length: 24
+Path: RRUULLDDRRULURDLULDDRUUL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L24/131274.txt
+Total nodes generated: 4355903
+Total time taken: 19 sec 239479 microSec.
+Path length: 24
+Path: RRUULDLURDRDLURULLDDRUUL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L24/131248.txt
+Total nodes generated: 7628286
+Total time taken: 33 sec 491090 microSec.
+Path length: 24
+Path: ULDDRURDLULURRDLULDDRUUL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L24/131370.txt
+Total nodes generated: 5433836
+Total time taken: 23 sec 855646 microSec.
+Path length: 24
+Path: ULLURRDLULDRDLURULDRDLUU
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L24/131400.txt
+Total nodes generated: 4115394
+Total time taken: 17 sec 937574 microSec.
+Path length: 24
+Path: RRULULDDRULURRDLULDDRUUL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L24/131374.txt
+Total nodes generated: 6775908
+Total time taken: 30 sec 110296 microSec.
+Path length: 24
+Path: UULDDLURRDLUURDLULDDRUUL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L24/131406.txt
+Total nodes generated: 5208211
+Total time taken: 22 sec 885410 microSec.
+Path length: 24
+Path: RDDLUURRDLULDRDLUURDDLUU
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L24/131378.txt
+Total nodes generated: 5997808
+Total time taken: 26 sec 401188 microSec.
+Path length: 24
+Path: ULURDLDRULULDDRUULDDRUUL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L24/131345.txt
+Total nodes generated: 4450664
+Total time taken: 19 sec 449975 microSec.
+Path length: 24
+Path: LLDDRUURDDLUURDLULDDRUUL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L24/131425.txt
+Total nodes generated: 6832575
+Total time taken: 30 sec 574740 microSec.
+Path length: 24
+Path: DDRUURDLULDRURDLULDDRUUL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L24/131394.txt
+Total nodes generated: 4112005
+Total time taken: 18 sec 111621 microSec.
+Path length: 24
+Path: RRULULDDRRULDLURULDDRUUL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L24/131455.txt
+Total nodes generated: 5850637
+Total time taken: 26 sec 214092 microSec.
+Path length: 24
+Path: DRULDDRRULLDRRULULDDRUUL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L24/131324.txt
+Total nodes generated: 4805856
+Total time taken: 21 sec 27483 microSec.
+Path length: 24
+Path: LURULLDRDRULURDLULDDRUUL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L24/131279.txt
+Total nodes generated: 6807236
+Total time taken: 30 sec 253752 microSec.
+Path length: 24
+Path: DDLUULDDRULURDRULLDDRUUL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L24/131286.txt
+Total nodes generated: 6226446
+Total time taken: 27 sec 938509 microSec.
+Path length: 24
+Path: URDRULLURRDLLDRUULDDRUUL
+Algorithm was: IDS
+Puzzle was at  8-puzzle/test/Part3/L24/131256.txt
+******************
+Depth: L24, Iterative Deepening Search - Average Time: 24662026.262283325microsconds, Average Nodes: 5566781.15, Puzzles Solved: 20, Timeouts: 0
+******************
+
+Total nodes generated: 27976
+Total time taken: 0 sec 401734 microSec.
+Path length: 24
+Path: DDRRULLDRRULDLURULDDRUUL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L24/131449.txt
+Total nodes generated: 31595
+Total time taken: 0 sec 394968 microSec.
+Path length: 24
+Path: DLUURDDRULLURRDLULDDRULU
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L24/131271.txt
+Total nodes generated: 32287
+Total time taken: 0 sec 559242 microSec.
+Path length: 24
+Path: RULLDRDRUULDDRUULLDDRUUL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L24/131311.txt
+Total nodes generated: 28979
+Total time taken: 0 sec 673621 microSec.
+Path length: 24
+Path: RRUULDRDLULURRDDLUURDLLU
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L24/131304.txt
+Total nodes generated: 25943
+Total time taken: 0 sec 503297 microSec.
+Path length: 24
+Path: RRULURDLULDDRURULLDDRUUL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L24/131264.txt
+Total nodes generated: 25824
+Total time taken: 0 sec 475972 microSec.
+Path length: 24
+Path: RRUULLDDRRULURDLULDDRUUL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L24/131274.txt
+Total nodes generated: 27519
+Total time taken: 0 sec 602058 microSec.
+Path length: 24
+Path: RURDLULDRRULURDLULDRDLUU
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L24/131248.txt
+Total nodes generated: 32504
+Total time taken: 0 sec 557067 microSec.
+Path length: 24
+Path: ULDDRURDLULURRDLULDDRUUL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L24/131370.txt
+Total nodes generated: 27765
+Total time taken: 0 sec 407561 microSec.
+Path length: 24
+Path: ULULDDRUULDRURDLULDDRUUL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L24/131400.txt
+Total nodes generated: 27246
+Total time taken: 0 sec 455292 microSec.
+Path length: 24
+Path: RRULULDDRULURRDLULDDRUUL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L24/131374.txt
+Total nodes generated: 26576
+Total time taken: 0 sec 367522 microSec.
+Path length: 24
+Path: UULDDLURRDLUURDLULDDRUUL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L24/131406.txt
+Total nodes generated: 28170
+Total time taken: 0 sec 410608 microSec.
+Path length: 24
+Path: RDDLUURRDLULDRDLUURDDLUU
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L24/131378.txt
+Total nodes generated: 25786
+Total time taken: 0 sec 573424 microSec.
+Path length: 24
+Path: ULURDLDRULULDDRUULDDRUUL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L24/131345.txt
+Total nodes generated: 27767
+Total time taken: 0 sec 388576 microSec.
+Path length: 24
+Path: LLDDRUURDDLUURDLULDDRUUL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L24/131425.txt
+Total nodes generated: 29026
+Total time taken: 0 sec 452515 microSec.
+Path length: 24
+Path: DDRUURDLULDRURDLULDDRUUL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L24/131394.txt
+Total nodes generated: 28815
+Total time taken: 0 sec 386690 microSec.
+Path length: 24
+Path: RRULULDDRRULDLURULDDRUUL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L24/131455.txt
+Total nodes generated: 25933
+Total time taken: 0 sec 381175 microSec.
+Path length: 24
+Path: DRULDDRRULLDRRULULDDRUUL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L24/131324.txt
+Total nodes generated: 27458
+Total time taken: 0 sec 437384 microSec.
+Path length: 24
+Path: LURULLDRDRULURDLULDDRUUL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L24/131279.txt
+Total nodes generated: 27347
+Total time taken: 0 sec 554001 microSec.
+Path length: 24
+Path: DDLUULDDRULURDRULLDDRUUL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L24/131286.txt
+Total nodes generated: 26767
+Total time taken: 0 sec 620806 microSec.
+Path length: 24
+Path: URDRULLURRDLLDRUULDDRUUL
+Algorithm was: h1
+Puzzle was at  8-puzzle/test/Part3/L24/131256.txt
+******************
+Depth: L24, Heuristic H1 - Average Time: 480176.1746406555microsconds, Average Nodes: 28064.15, Puzzles Solved: 20, Timeouts: 0
+******************
+
+Total nodes generated: 20042
+Total time taken: 0 sec 595265 microSec.
+Path length: 24
+Path: DDRRULLDRRULDLURULDDRUUL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L24/131449.txt
+Total nodes generated: 21816
+Total time taken: 0 sec 661700 microSec.
+Path length: 24
+Path: ULDRDLURDRUULDRULLDDRUUL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L24/131271.txt
+Total nodes generated: 12240
+Total time taken: 0 sec 615683 microSec.
+Path length: 24
+Path: URDLDRULLDRUULDRURDLDLUU
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L24/131311.txt
+Total nodes generated: 10176
+Total time taken: 0 sec 600772 microSec.
+Path length: 24
+Path: RRUULDRDLULURRDDLUURDLLU
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L24/131304.txt
+Total nodes generated: 14695
+Total time taken: 0 sec 531317 microSec.
+Path length: 24
+Path: RRUULDRULLDDRURULLDDRUUL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L24/131264.txt
+Total nodes generated: 12505
+Total time taken: 0 sec 400918 microSec.
+Path length: 24
+Path: RRUULLDDRRULURDLULDDRUUL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L24/131274.txt
+Total nodes generated: 9738
+Total time taken: 0 sec 547983 microSec.
+Path length: 24
+Path: RURDLULDRRUULDRULLDRDLUU
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L24/131248.txt
+Total nodes generated: 20501
+Total time taken: 0 sec 467700 microSec.
+Path length: 24
+Path: ULDDRURDLULURRDLULDDRUUL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L24/131370.txt
+Total nodes generated: 12776
+Total time taken: 0 sec 401853 microSec.
+Path length: 24
+Path: ULLURRDLULDRDLURULDRDLUU
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L24/131400.txt
+Total nodes generated: 17228
+Total time taken: 0 sec 566145 microSec.
+Path length: 24
+Path: RRULULDDRULURRDLULDDRUUL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L24/131374.txt
+Total nodes generated: 17522
+Total time taken: 0 sec 443969 microSec.
+Path length: 24
+Path: UULDDLURRDLUURDLULDDRUUL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L24/131406.txt
+Total nodes generated: 11426
+Total time taken: 0 sec 459599 microSec.
+Path length: 24
+Path: RDDLUURRDLULDRDLUURDDLUU
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L24/131378.txt
+Total nodes generated: 14162
+Total time taken: 0 sec 577989 microSec.
+Path length: 24
+Path: ULURDLDRULULDDRUULDDRUUL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L24/131345.txt
+Total nodes generated: 19711
+Total time taken: 0 sec 556025 microSec.
+Path length: 24
+Path: LLDDRUURDDLUURDLULDDRUUL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L24/131425.txt
+Total nodes generated: 24027
+Total time taken: 0 sec 601944 microSec.
+Path length: 24
+Path: DDRUURDLULDRURDLULDDRUUL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L24/131394.txt
+Total nodes generated: 20706
+Total time taken: 0 sec 661240 microSec.
+Path length: 24
+Path: RRULULDDRRULDLURULDDRUUL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L24/131455.txt
+Total nodes generated: 14943
+Total time taken: 0 sec 428220 microSec.
+Path length: 24
+Path: DRULDDRRULLDRRULULDDRUUL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L24/131324.txt
+Total nodes generated: 18053
+Total time taken: 0 sec 608974 microSec.
+Path length: 24
+Path: LURULLDRDRUULDRULLDDRUUL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L24/131279.txt
+Total nodes generated: 20533
+Total time taken: 0 sec 549259 microSec.
+Path length: 24
+Path: DDLUULDDRULURDRULLDDRUUL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L24/131286.txt
+Total nodes generated: 17098
+Total time taken: 0 sec 589701 microSec.
+Path length: 24
+Path: URDRULLURRDLLDRUULDDRUUL
+Algorithm was: h2
+Puzzle was at  8-puzzle/test/Part3/L24/131256.txt
+******************
+Depth: L24, Heuristic H2 - Average Time: 543313.3125305176microsconds, Average Nodes: 16494.9, Puzzles Solved: 20, Timeouts: 0
+******************
+
+Total nodes generated: 3032
+Total time taken: 0 sec 359189 microSec.
+Path length: 24
+Path: DDRRULLDRRULDLURULDDRUUL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L24/131449.txt
+Total nodes generated: 1603
+Total time taken: 0 sec 259025 microSec.
+Path length: 26
+Path: ULDDRURULLDDRRULULDDRRUULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L24/131271.txt
+Total nodes generated: 1868
+Total time taken: 0 sec 404700 microSec.
+Path length: 26
+Path: DLURRULLDRRULLDRDLURDRUULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L24/131311.txt
+Total nodes generated: 2727
+Total time taken: 0 sec 632624 microSec.
+Path length: 24
+Path: RRUULDRDLULURRDDLUURDLLU
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L24/131304.txt
+Total nodes generated: 1923
+Total time taken: 0 sec 318529 microSec.
+Path length: 26
+Path: RRULLURRDLULDDRUULDDRURULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L24/131264.txt
+Total nodes generated: 1494
+Total time taken: 0 sec 418439 microSec.
+Path length: 26
+Path: URULDDRRULLDRRUULLDDRRUULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L24/131274.txt
+Total nodes generated: 3815
+Total time taken: 0 sec 402796 microSec.
+Path length: 26
+Path: URRULLDDRURDLULURDLDRRUULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L24/131248.txt
+Total nodes generated: 827
+Total time taken: 0 sec 235012 microSec.
+Path length: 26
+Path: RULLDRDLURDRUULDDRUULDRULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L24/131370.txt
+Total nodes generated: 5952
+Total time taken: 0 sec 472658 microSec.
+Path length: 24
+Path: ULULDDRUULDRURDLULDDRUUL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L24/131400.txt
+Total nodes generated: 2271
+Total time taken: 0 sec 346988 microSec.
+Path length: 26
+Path: URDRULULDDRUURDLULDDRURULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L24/131374.txt
+Total nodes generated: 2649
+Total time taken: 0 sec 373070 microSec.
+Path length: 24
+Path: UULDDLURRDLUURDLULDDRUUL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L24/131406.txt
+Total nodes generated: 5021
+Total time taken: 0 sec 382580 microSec.
+Path length: 24
+Path: DDRUULDDRULURRDLULDDRUUL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L24/131378.txt
+Total nodes generated: 1728
+Total time taken: 0 sec 236866 microSec.
+Path length: 24
+Path: UULDDRUULLDDRRULULDDRUUL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L24/131345.txt
+Total nodes generated: 1681
+Total time taken: 0 sec 274913 microSec.
+Path length: 28
+Path: LLDDRRULDLURULDDRUULDDRRUULL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L24/131425.txt
+Total nodes generated: 6783
+Total time taken: 0 sec 561411 microSec.
+Path length: 24
+Path: DDRUURDLULDRURDLULDDRUUL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L24/131394.txt
+Total nodes generated: 3550
+Total time taken: 0 sec 286073 microSec.
+Path length: 24
+Path: RRULULDDRRULDLURULDDRUUL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L24/131455.txt
+Total nodes generated: 1807
+Total time taken: 0 sec 368097 microSec.
+Path length: 24
+Path: DRULDDRRULLDRRULULDDRUUL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L24/131324.txt
+Total nodes generated: 4272
+Total time taken: 0 sec 393387 microSec.
+Path length: 24
+Path: LURULLDRDRULURDLULDDRUUL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L24/131279.txt
+Total nodes generated: 6423
+Total time taken: 0 sec 436413 microSec.
+Path length: 24
+Path: DDLUULDDRULURDRULLDDRUUL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L24/131286.txt
+Total nodes generated: 4615
+Total time taken: 0 sec 414793 microSec.
+Path length: 24
+Path: UURDDRULLDRUURDLULDDRUUL
+Algorithm was: h3
+Puzzle was at  8-puzzle/test/Part3/L24/131256.txt
+******************
+Depth: L24, Heuristic H3 - Average Time: 378878.4384727478microsconds, Average Nodes: 3202.05, Puzzles Solved: 20, Timeouts: 0
+******************
