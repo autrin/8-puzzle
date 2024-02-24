@@ -1,3 +1,5 @@
+# This program was written with the help of algorithms from AIMA.
+
 import argparse
 import heapq
 import math
