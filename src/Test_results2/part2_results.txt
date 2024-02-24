@@ -4,123 +4,123 @@ Total time taken: 0 sec 500302 microSec.
 Path length: 24
 Path: DDLUULDRRULLDRRDLLURRULL
 Algorithm was: Heuristic H1
-Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S1.txt
+Puzzle was at  8-puzzle/test/Part2/S1.txt
 Total nodes generated: 4629
 Total time taken: 0 sec 183100 microSec.
 Path length: 20
 Path: DDLLURULDRRDLLURRULL
 Algorithm was: Heuristic H1
-Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S2.txt
-Unsolvable puzzle in file /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S3.txt: The inputted puzzle is not solvable.
+Puzzle was at  8-puzzle/test/Part2/S2.txt
+Unsolvable puzzle in file  8-puzzle/test/Part2/S3.txt: The inputted puzzle is not solvable.
 Total nodes generated: 162912
 Total time taken: 1 sec 365188 microSec.
 Path length: 31
 Path: LDDRUULDDRURULDRDLUULDDRURULDLU
 Algorithm was: Heuristic H1
-Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S4.txt
+Puzzle was at  8-puzzle/test/Part2/S4.txt
 Total nodes generated: 20
 Total time taken: 0 sec 171984 microSec.
 Path length: 6
 Path: RDLUUL
 Algorithm was: Heuristic H1
-Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S5.txt
+Puzzle was at  8-puzzle/test/Part2/S5.txt
 Total nodes generated: 19505
 Total time taken: 0 sec 304719 microSec.
 Path length: 26
 Path: LLDDRURDLLURRULLDRRULDDLUU
 Algorithm was: Heuristic H2
-Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S1.txt
+Puzzle was at  8-puzzle/test/Part2/S1.txt
 Total nodes generated: 4390
 Total time taken: 0 sec 213766 microSec.
 Path length: 20
 Path: DDLLURULDRRDLLURRULL
 Algorithm was: Heuristic H2
-Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S2.txt
-Unsolvable puzzle in file /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S3.txt: The inputted puzzle is not solvable.
+Puzzle was at  8-puzzle/test/Part2/S2.txt
+Unsolvable puzzle in file  8-puzzle/test/Part2/S3.txt: The inputted puzzle is not solvable.
 Total nodes generated: 95214
 Total time taken: 0 sec 920785 microSec.
 Path length: 31
 Path: DLDRURDLULURRDLLDRUULDRURDDLLUU
 Algorithm was: Heuristic H2
-Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S4.txt
+Puzzle was at  8-puzzle/test/Part2/S4.txt
 Total nodes generated: 20
 Total time taken: 0 sec 164227 microSec.
 Path length: 6
 Path: RDLUUL
 Algorithm was: Heuristic H2
-Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S5.txt
+Puzzle was at  8-puzzle/test/Part2/S5.txt
 Total nodes generated: 2382
 Total time taken: 0 sec 210500 microSec.
 Path length: 24
 Path: DDLUULDRRULLDRRDLLURRULL
 Algorithm was: Heuristic H3
-Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S1.txt
+Puzzle was at  8-puzzle/test/Part2/S1.txt
 Total nodes generated: 304
 Total time taken: 0 sec 168149 microSec.
 Path length: 20
 Path: DDLLURULDRRDLLURRULL
 Algorithm was: Heuristic H3
-Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S2.txt
-Unsolvable puzzle in file /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S3.txt: The inputted puzzle is not solvable.
+Puzzle was at  8-puzzle/test/Part2/S2.txt
+Unsolvable puzzle in file  8-puzzle/test/Part2/S3.txt: The inputted puzzle is not solvable.
 Total nodes generated: 3589
 Total time taken: 0 sec 225016 microSec.
 Path length: 31
 Path: LDDRRUULDRULLDRDLURDRUULLDRRULL
 Algorithm was: Heuristic H3
-Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S4.txt
+Puzzle was at  8-puzzle/test/Part2/S4.txt
 Total nodes generated: 20
 Total time taken: 0 sec 182966 microSec.
 Path length: 6
 Path: RDLUUL
 Algorithm was: Heuristic H3
-Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S5.txt
+Puzzle was at  8-puzzle/test/Part2/S5.txt
 Total nodes generated: 6764597
 Total time taken: 31 sec 779040 microSec.
 Path length: 24
 Path: DDLUULDRRULLDRRDLLURRULL
 Algorithm was: Iterative Deepening Search
-Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S1.txt
+Puzzle was at  8-puzzle/test/Part2/S1.txt
 Total nodes generated: 720484
 Total time taken: 3 sec 62064 microSec.
 Path length: 20
 Path: DDLLURULDRRDLLURRULL
 Algorithm was: Iterative Deepening Search
-Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S2.txt
-Unsolvable puzzle in file /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S3.txt: The inputted puzzle is not solvable.Algorithm timed out after 15 minutes. Total time taken: >15 min
+Puzzle was at  8-puzzle/test/Part2/S2.txt
+Unsolvable puzzle in file  8-puzzle/test/Part2/S3.txt: The inputted puzzle is not solvable.Algorithm timed out after 15 minutes. Total time taken: >15 min
 Total nodes generated: Data unavailable — process was terminated
 Path length: Timed out.
 Path: Timed out.
 Algorithm was: Iterative Deepening Search
-Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S4.txt
+Puzzle was at  8-puzzle/test/Part2/S4.txt
 
 Total nodes generated: 320
 Total time taken: 0 sec 190801 microSec.
 Path length: 6
 Path: RDLUUL
 Algorithm was: Iterative Deepening Search
-Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S5.txt
+Puzzle was at  8-puzzle/test/Part2/S5.txt
 Total nodes generated: 118290
 Total time taken: 0 sec 561292 microSec.
 Path length: 24
 Path: DDLUULDRRULLDRRDLLURRULL
 Algorithm was: Breadth First Search
-Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S1.txt
+Puzzle was at  8-puzzle/test/Part2/S1.txt
 Total nodes generated: 41329
 Total time taken: 0 sec 299954 microSec.
 Path length: 20
 Path: DDLLURULDRRDLLURRULL
 Algorithm was: Breadth First Search
-Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S2.txt
-Unsolvable puzzle in file /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S3.txt: The inputted puzzle is not solvable.
+Puzzle was at  8-puzzle/test/Part2/S2.txt
+Unsolvable puzzle in file  8-puzzle/test/Part2/S3.txt: The inputted puzzle is not solvable.
 Total nodes generated: 181438
 Total time taken: 0 sec 826496 microSec.
 Path length: 31
 Path: DDRUULLDDRURULLDDRURULLDDRRUULL
 Algorithm was: Breadth First Search
-Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S4.txt
+Puzzle was at  8-puzzle/test/Part2/S4.txt
 Total nodes generated: 102
 Total time taken: 0 sec 329983 microSec.
 Path length: 6
 Path: RDLUUL
 Algorithm was: Breadth First Search
-Puzzle was at /Users/autrinhakimi/Library/CloudStorage/OneDrive-IowaStateUniversity/Spring2024/CS472/lab1/8-puzzle/test/Part2/S5.txt
+Puzzle was at  8-puzzle/test/Part2/S5.txt
