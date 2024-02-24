@@ -501,7 +501,7 @@ def main(search_func, algorithm_name, total_time3, total_nodes3, solved_count, t
         output_file_name = 'part3_results.txt'
         global output_file_path
         output_file_path = os.path.join(results_dir, output_file_name)  # Construct the full path
-        args.fPath = file_path
+        # args.fPath = file_path
         search_func = search_func3
     elif args.part == '2' and args.alg in algorithm_map:
         results_dir = 'Test_results2'
@@ -512,7 +512,7 @@ def main(search_func, algorithm_name, total_time3, total_nodes3, solved_count, t
         output_file_path = os.path.join(results_dir, output_file_name)
         
     # Load the puzzle from the specified file path
-    puzzle = get_puzzle(args.fPath)
+    puzzle = get_puzzle(file_path)
     if puzzle is None:
         with open(output_file_path, 'a') as file:
             file.write("Could not load the puzzle.\n")
@@ -522,14 +522,14 @@ def main(search_func, algorithm_name, total_time3, total_nodes3, solved_count, t
         puzzle_instance = EightPuzzle(puzzle) # It will check inversion rank % 2 == 0
     except AssertionError as error:
         with open(output_file_path, 'a') as file:
-            file.write(f"\nUnsolvable puzzle in file {args.fPath}: {error}")
-        print(f"\nUnsolvable puzzle at {args.fPath}.")
+            file.write(f"\nUnsolvable puzzle in file {file_path}: {error}")
+        print(f"\nUnsolvable puzzle at {file_path}.")
         return
     if args.part == 2:
         search_func, algorithm_name = algorithm_map.get(args.alg, (None, "Unknown Algorithm"))
     if search_func is None:
         with open(output_file_path, 'a') as file:
-            file.write(f"\nInvalid algorithm specified at {args.fPath}.\n")
+            file.write(f"\nInvalid algorithm specified at {file_path}.\n")
         print("\nInvalid algorithm specified.")
         return
 
@@ -558,7 +558,7 @@ def main(search_func, algorithm_name, total_time3, total_nodes3, solved_count, t
             file.write("Path length: Timed out.\n")
             file.write("Path: Timed out.\n")
             file.write(f"Algorithm was: {algorithm_name}\n")
-            file.write(f"Puzzle was at {args.fPath}\n")
+            file.write(f"Puzzle was at {file_path}\n")
         else:
             # Process completed within the time limit
             try:
@@ -573,14 +573,14 @@ def main(search_func, algorithm_name, total_time3, total_nodes3, solved_count, t
                     file.write(f"Path length: {len(result['path'])}\n")
                     file.write(f"Path: {''.join(result['path'])}\n")
                     file.write(f"Algorithm was: {algorithm_name}\n")
-                    file.write(f"Puzzle was at {args.fPath}")
+                    file.write(f"Puzzle was at {file_path}")
                     if args.part == '3' and args.alg == 'all':
                         total_time3 += total_time
                         total_nodes3 += result['nodes_generated']
                         solved_count += 1
             except queue.Empty:
                 file.write("No result was returned by the search algorithm.\n")
-                file.write(f"Puzzle was at {args.fPath}")
+                file.write(f"Puzzle was at {file_path}")
     print(f"Results written to {output_file_path}")
     return (total_nodes3, total_time3, solved_count)
 
@@ -588,9 +588,7 @@ def main(search_func, algorithm_name, total_time3, total_nodes3, solved_count, t
 
 if __name__ == '__main__':
     args = parse_arguments()
-    # global total_time3
-    # global total_nodes3
-    # global solved_count
+
     total_time3, total_nodes3, solved_count, timeouts = 0,0,0,0
 
     if args.part == '2':
