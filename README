@@ -1,0 +1,14 @@
+You can run 8puzzle.py in 2 ways:
+    
+    Either run it on a single test file in Part2 folder. Then it will write the output in 'Test_results2/part2_results.txt'
+    To do this enter the following command in a terminal:
+        python3 8puzzle.py --fPath <file.txt> --alg <Algorithm> --part 2
+            where <file.txt> can be '/8-puzzle/test/Part2/S1.txt' and <Algorithm> can be 'h1'
+
+    Or run it on all of the files in Part3 folder. You only need to give it the directory of Part3 folder. And it will search for all of the .txt files in that folder and solve the 8-puzzzle game for them. Then it will write the performance of a algorithm with a specific depth to 'Experiment_results3/part3_results.txt'. 
+    To do this enter the following command in a terminal:
+        python3 8puzzle.py --fPath <Part3 path> --alg all --part 3
+            where <Part3 path> can be: /8-puzzle/test/Part3
+    
+Please adjust the directories according to the directory of your test files setup if needed.
+Don't forget '--part 2' or '--part 3' at the end of the command.
