@@ -448,7 +448,7 @@ def parse_arguments():
     return parser.parse_args()
 
 
-def run_search_algorithm(search_func, problem, result_queue):
+def run_search_algorithm(search_func, problem, result_queue, solved_count):
     start_time = time.time()
     try:
         # Initialize the node counter in the problem instance
@@ -475,7 +475,6 @@ def run_search_algorithm(search_func, problem, result_queue):
                 "total_time": total_time,
                 "path": path,
             })
-            solved_count += 1
     except Exception as e:
         # In case of any exception, send it back to the main process
         result_queue.put({
@@ -493,7 +492,7 @@ algorithm_map = {
     'h3': (heuristic_h3, "Heuristic H3"),
 }
 
-def main(search_func, algorithm_name, total_time3, total_nodes3, file_path):
+def main(search_func, algorithm_name, total_time3, total_nodes3, solved_count, timeouts, file_path):
     if args.part == '3' and args.alg == 'all':
         # Ensure the 'Experiment_results' directory exists
         results_dir = 'Experiment_results3'
@@ -538,7 +537,7 @@ def main(search_func, algorithm_name, total_time3, total_nodes3, file_path):
     start_time = time.time()
 
     # Create and start the search process
-    search_process = Process(target=run_search_algorithm, args=(search_func, puzzle_instance, result_queue))
+    search_process = Process(target=run_search_algorithm, args=(search_func, puzzle_instance, result_queue, solved_count))
     search_process.start()
     search_process.join(timeout=900)  # 15 minutes
 
@@ -578,19 +577,26 @@ def main(search_func, algorithm_name, total_time3, total_nodes3, file_path):
                     if args.part == '3' and args.alg == 'all':
                         total_time3 += total_time
                         total_nodes3 += result['nodes_generated']
+                        solved_count += 1
             except queue.Empty:
                 file.write("No result was returned by the search algorithm.\n")
                 file.write(f"Puzzle was at {args.fPath}")
     print(f"Results written to {output_file_path}")
+    return (total_nodes3, total_time3, solved_count)
+
+
 
 if __name__ == '__main__':
     args = parse_arguments()
-    total_time3, total_nodes3, solved_count = 0,0,0
+    # global total_time3
+    # global total_nodes3
+    # global solved_count
+    total_time3, total_nodes3, solved_count, timeouts = 0,0,0,0
 
     if args.part == '2':
         if args.alg in algorithm_map:
             search_func, algorithm_name = algorithm_map[args.alg]
-            main(search_func, algorithm_name, total_time3, total_nodes3, args.fPath)
+            _, _, _ = main(search_func, algorithm_name, total_time3, total_nodes3, solved_count, timeouts, args.fPath)
         else:
             print("Please select an algorithm among 'BFS', 'IDS', 'h1', 'h2', 'h3'")
     elif args.part == '3' and args.alg == 'all':
@@ -598,23 +604,23 @@ if __name__ == '__main__':
             folder_path = join(args.fPath, subdir)
             for alg_name, (search_func3, alg_desc) in algorithm_map.items():
                 result3 = {}
-                # for alg_name, (search_func, alg_desc) in algorithm_map.items():
-                timeouts = 0
                 for subdir1, dirs, files in walk(folder_path):
                     for filename in files:
                         if filename.endswith(".txt"):
                             file_path = join(subdir1, filename)
-                            main(search_func3, alg_name, total_time3, total_nodes3, file_path)
+                            total_nodes3, total_time3, solved_count = main(search_func3, alg_name, total_time3, total_nodes3, solved_count, timeouts, file_path)
                             
                     # Store averaged results for this algorithm
                     if solved_count > 0:
-                        avg_time = total_time3 / solved_count
+                        avg_time = (total_time3 * 1_000_000) / solved_count
                         avg_nodes = total_nodes3 / solved_count
                     else:
                         avg_time, avg_nodes = 0, 0
                     result3[alg_desc] = (avg_time, avg_nodes, solved_count, timeouts)
                     for alg_desc, metrics in result3.items():
                         with open(output_file_path, 'a') as file:
-                            file.write(f"\n******************\nDepth: {subdir}, {alg_desc} - Average Time: {metrics[0]}s, Average Nodes: {metrics[1]}, Puzzles Solved: {metrics[2]}, Timeouts: {metrics[3]}\n******************\n")
+                            file.write(f"\n******************\nDepth: {subdir}, {alg_desc} - Average Time: {metrics[0]}microsconds, Average Nodes: {metrics[1]}, Puzzles Solved: {metrics[2]}, Timeouts: {metrics[3]}\n******************\n")
+                    total_time3, total_nodes3, solved_count, timeouts = 0,0,0,0
+
     else:
         print("Please specify a valid part (2 or 3) and algorithm.")
