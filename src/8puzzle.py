@@ -79,11 +79,6 @@ def path_actions(node):
         return path_actions(node.parent) + [action]
 
 
-def path_states(node):
-    "The sequence of states to get to this node."
-    if node in (cutoff, failure, None): 
-        return []
-    return path_states(node.parent) + [node.state]
 
 FIFOQueue = deque
 
