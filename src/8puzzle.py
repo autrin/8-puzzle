@@ -367,45 +367,6 @@ def hamming_distance(A, B):
     "Number of positions where vectors A and B are different."
     return sum(a != b for a, b in zip(A, B))
 
-# def inversions(board):
-#     "The number of times a piece is a smaller number than a following piece."
-#     return sum((a > b and a != 0 and b != 0) for (a, b) in combinations(board, 2))
-
-
-def board8(board, fmt=(3 * "{} {} {}\n")):
-    "A string representing an 8-puzzle board"
-    return fmt.format(*board).replace("0", "_")
-
-
-class Board(defaultdict):
-    empty = "."
-    off = "#"
-
-    def __init__(self, board=None, width=8, height=8, to_move=None, **kwds):
-        if board is not None:
-            self.update(board)
-            self.width, self.height = (board.width, board.height)
-        else:
-            self.width, self.height = (width, height)
-        self.to_move = to_move
-
-    def __missing__(self, key):
-        x, y = key
-        if x < 0 or x >= self.width or y < 0 or y >= self.height:
-            return self.off
-        else:
-            return self.empty
-
-    def __repr__(self):
-        def row(y):
-            return " ".join(self[x, y] for x in range(self.width))
-
-        return "\n".join(row(y) for y in range(self.height))
-
-    def __hash__(self):
-        return hash(tuple(sorted(self.items()))) + hash(self.to_move)
-
-
 
 # Read input
 def get_puzzle(file_path):
