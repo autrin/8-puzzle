@@ -1,6 +1,8 @@
 # 8-Puzzle Solver 
 
-An AI-based solver for the classic 8-puzzle problem## Algorithms
+An AI-based solver for the classic 8-puzzle problem
+
+## Algorithms
 
 - **BFS**: Explores nodes level by level for guaranteed shortest path.
 - **IDS**: Combines DFS space efficiency with BFS optimality.
@@ -12,13 +14,6 @@ An AI-based solver for the classic 8-puzzle problem## Algorithms
 
 - Achieves up to 60x speedup by leveraging Python's multiprocessing.
 - Capable of solving hundreds of puzzles in 10 minutes.
-
-## Notes
-
-- Always include `--part 2` or `--part 3` as appropriate.
-- Adjust file paths if your directory structure differs.
-
-## Licensee search algorithms and significant performance optimizations.
 
 ## Overview
 
@@ -52,7 +47,7 @@ cd 8-puzzle
 
 Place test files in the `test/Part2` or `test/Part3` directories, or adjust paths as needed.
 
-## ## Usage
+## Usage
 
 ### Solve a Single Test File
 
@@ -86,24 +81,11 @@ python3 8puzzle.py --fPath <Part3 path> --alg all --part 3
 python3 8puzzle.py --fPath test/Part3 --alg all --part 3
 ```
 
-## Algorithms
+## Notes
 
-    BFS: Explores nodes level by level for guaranteed shortest path.
-    IDS: Combines DFS space efficiency with BFS optimality.
-    A*: Uses heuristics for efficient optimal solutions:
-        Manhattan Distance: Sum of distances of tiles from goal positions.
-        Linear Conflict: Manhattan Distance plus additional penalties for tiles in conflict.
+- Always include `--part 2` or `--part 3` as appropriate.
+- Adjust file paths if your directory structure differs.
 
-Performance
+## License
 
-    Achieves up to 60x speedup by leveraging Python’s multiprocessing.
-    Capable of solving hundreds of puzzles in 10 minutes.
-
-Notes
-
-    Always include --part 2 or --part 3 as appropriate.
-    Adjust file paths if your directory structure differs.
-
-License
-
-    MIT License.
+MIT License.
